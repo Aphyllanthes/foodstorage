@@ -43,7 +43,8 @@ totalDistances <- totalDistances %>%
   mutate(turnover2015 = turnover2015 / n) %>% 
   mutate(turnover2016 = turnover2016 / n) %>% 
   mutate(turnover2017 = turnover2017 / n) %>% 
-  mutate(avg.turnover = avg.turnover / n)
+  mutate(avg.turnover = avg.turnover / n) %>% 
+  mutate(Herkunftsgenauigkeit = ifelse(Lieferantentyp == "Erzeuger", 1, Herkunftsgenauigkeit))
   
 meanDists <- totalDistances %>% 
   group_by(Produktgruppe) %>% 
@@ -85,3 +86,4 @@ dbDisconnect(con)
 
 ##################
 
+#write.csv2(totalDistances, "data/totalDistances.csv")
