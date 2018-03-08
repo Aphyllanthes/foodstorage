@@ -14,13 +14,15 @@ library(ggplot2)
 library(RSQLite)
 #library(readr)
 library(data.table)
-#library(sf)
-#library(rgdal)
+library(sf)
+library(rgdal)
 library(dplyr)
 library(raster)
 library(tidyr)
 library(foodstorage)
 library(leaflet)
+library("geosphere")
+
 ```
 
 # Introduction
@@ -38,6 +40,8 @@ Such foodcoop were founded in Freiburg as well resulting in five existing foodco
 This study tries to investigate the transport distances of the products consumed by the foodcoop "Kornkammer" and to inform the foodcoop members about the routes their food travels. A web app was created for this purpose.
 
 # Methods
+Data acquisition, data processing and data visualisation was performed by Miriam, Anna and Nele working closely together. The version control "git" and the platform "github" made this cooperation easy and productive. 
+
 ## data acquisition 
 
 The foodcoop "Kornkammer" uses a tablet with an app to manage the inventory of products, to enter deliveries and to process the purchases of the members. The app stores all bookings related to these tasks in an SQLite database. 
@@ -80,20 +84,19 @@ Three different display options were used to visualise the transport Routes betw
 
 # Results
 
-
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-producersInfoStraight <- readOGR("../../data/producersInfoStraight/", "producersInfoStraight")
-producersInfo <- readOGR("../../data/producersInfo/", "producersInfo")
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# producersInfoStraight <- readOGR("../../data/producersInfoStraight/", "producersInfoStraight")
+# producersInfo <- readOGR("../../data/producersInfo/", "producersInfo")
 producersRoutes <- readOGR("../../data/producersRoutes/", "producersRoutes")
 producersExist <- readOGR("../../data/producersExist/", "producersExist")
 Kornkammer <- readOGR("../../data/Kornkammer/", "Kornkammer")
 
-names(producersInfo) <- c('Produkte_App', 'Produkte_Zusammenfassung', 'Produktgruppe', 'Verpackungseinheit', 'Lieferant', 'Ort', 'EntfernungZwischenhaendler', 'Herkunftsgenauigkeit', 'Lieferantentyp', 'EntfernungKK', 'Gesamtentfernung', 'n', 'turnover2015', 'turnover2016', 'turnover2017', 'avg.turnover')
-producersInfo$avg.turnover <- as.numeric(producersInfo$avg.turnover)
-producersInfo$Gesamtentfernung <- as.numeric(producersInfo$Gesamtentfernung)
-producersInfo$turnover2017 <- as.numeric(producersInfo$turnover2017)
-producersInfo$Produktgruppe <- as.character(producersInfo$Produktgruppe)
-producersInfo$Produkte_Zusammenfassung <- as.character(producersInfo$Produkte_Zusammenfassung)
+# names(producersInfo) <- c('Produkte_App', 'Produkte_Zusammenfassung', 'Produktgruppe', 'Verpackungseinheit', 'Lieferant', 'Ort', 'EntfernungZwischenhaendler', 'Herkunftsgenauigkeit', 'Lieferantentyp', 'EntfernungKK', 'Gesamtentfernung', 'n', 'turnover2015', 'turnover2016', 'turnover2017', 'avg.turnover')
+# producersInfo$avg.turnover <- as.numeric(producersInfo$avg.turnover)
+# producersInfo$Gesamtentfernung <- as.numeric(producersInfo$Gesamtentfernung)
+# producersInfo$turnover2017 <- as.numeric(producersInfo$turnover2017)
+# producersInfo$Produktgruppe <- as.character(producersInfo$Produktgruppe)
+# producersInfo$Produkte_Zusammenfassung <- as.character(producersInfo$Produkte_Zusammenfassung)
 ```
 
 
@@ -117,8 +120,8 @@ The analysis of transportation distances of products consumed by the foodcoop su
 For 53 out of 118 products not even a guess of the origin was possible and the share of products where no transportation distance could be calculated is the third largest ...
 
 
-For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure ... : 
-![](../../map1.png){width=250px}
+
+
 shows the actual driving directions for all products from its last transfer point. 
 
 
@@ -141,9 +144,6 @@ createDistanceCategory <- function(totalDistances) {
 }
 ```
 
-
-
-
 For those products, that didn't grow at its last transfer point, the distance from its last transfer poit to its origin can be calculated, in the case that its origin is known.
 
 
@@ -155,7 +155,7 @@ positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200"
 ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgruppe)) +
   geom_bar(stat = "identity") +
   scale_x_discrete(limits = positions)+
-  labs(title = "Consumed products and their transport distance", 
+  labs(#title = "Consumed products and their transport distance", 
        y = "Turnover [kg]",
        x = "Distance [km]")  +
   guides(color=guide_legend(title="Product group"))
@@ -169,30 +169,160 @@ For every product that has ever been ordered by the FoodCoop, the transportation
 ```{r map1, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
 pal <- colorFactor(c("darkgreen", "blue", "red"), domain = c(  "Erzeuger", "Produzent", "Zwischenhaendler"))
 KKIcon <- iconList(
-  Kornkammer = makeIcon("../../data/icon-2.png", "../../data/icon-2.png", 24, 24)
+  Kornkammer = makeIcon("../../data/icon-2.png", "../../data/icon-2.png", 18, 18)
 )
 
 leaflet(producersExist) %>%
   addProviderTiles(providers$CartoDB.Positron) %>% 
-  addCircleMarkers(radius = 6,
+  addCircleMarkers(radius = 3,
                    stroke = FALSE, fillOpacity = 0.8, color=pal(producersExist$Lfrntnt),
                    popup = producersExist$Liefrnt) %>%  #, clusterOptions = markerClusterOptions()
   addLegend("bottomright",
             pal = pal, values = ~producersExist$Lfrntnt,
-            title = "Lieferantentyp",
+            title = "Type of supplier",
             opacity = 1
   ) %>%
   addMarkers(Kornkammer,
              lng = coordinates(Kornkammer)[1], lat = coordinates(Kornkammer)[2],
-             icon =  ~KKIcon[Kornkammer$Name],
-             popup= "Kornkammer") %>% 
+             icon =  ~KKIcon[Kornkammer$Name], popup= "Kornkammer", 
+             label = "FoodCoop", 
+             labelOptions = labelOptions(noHide = T,  textOnly = F, direction = "left")) %>% 
   addPolylines(data = producersRoutes, color = "black", opacity = 1, weight = 2)
 
 ```
 
 shows the actual driving directions for all products from its last transfer point. 
 
-![](../../map2.png){width=250px}
+```{r generateGeoData, message=FALSE, warning=FALSE, include=FALSE, error=TRUE}
+############
+con <- dbConnect(SQLite(), "../../data/kornInfo.sqlite")
+
+#dbListTables(con)
+#dbListFields(con, "kornumsatz_origin")
+#dbListFields(con, "productInfo")
+#dbListFields(con, "producerAdress")
+
+productInfo <- dbGetQuery(con, "SELECT * FROM productInfo")
+producerAdress <- dbGetQuery(con, "SELECT * FROM producerAdress")
+kornumsatz <- dbGetQuery(con, "SELECT * FROM kornumsatz_origin")
+origin <- dbGetQuery(con, "SELECT * FROM productOrigin")
+Kornkammer <- dbGetQuery(con, "SELECT * from AdresseKornkammer")
+
+productOrigin <- origin
+
+KUperYear <- kornumsatz_perYear(kornumsatz = kornumsatz, productInfo = productInfo)
+KU <- KUperYear %>% 
+  spread(Jahr, Umsatz) %>% 
+  mutate(avg = mean(c(`2016`, `2017`), na.rm = T))
+names(KU) <- c("Produkte_Zusammenfassung", "turnover2015", "turnover2016", "turnover2017", "avg.turnover")
+
+originWithDistances <- SupplierDistance(origin, producerAdress)
+
+totalDistances <- totalDistancesFun(origin = origin, producers = producerAdress, productInfo = productInfo)
+
+## count occurance of every product in the table, to split the turnover of the product to the different occurances.
+totalDistances <- totalDistances %>% 
+  add_count(Produkte_Zusammenfassung) %>% 
+  left_join(KU, by = "Produkte_Zusammenfassung") %>% 
+  mutate(turnover2015 = turnover2015 / n) %>% 
+  mutate(turnover2016 = turnover2016 / n) %>% 
+  mutate(turnover2017 = turnover2017 / n) %>% 
+  mutate(avg.turnover = avg.turnover / n) %>% 
+  mutate(Herkunftsgenauigkeit = ifelse(Lieferantentyp == "Erzeuger", 1, Herkunftsgenauigkeit))
+  
+meanDists <- totalDistances %>% 
+  group_by(Produktgruppe) %>% 
+  summarise(avgDistance = mean(Gesamtentfernung, na.rm=T))
+
+###############################################
+## prepare data for the plot:
+producerAdress$xCoord <- as.numeric(producerAdress$xCoord)
+producerAdress$yCoord <- as.numeric(producerAdress$yCoord)
+## we only want to plot the producers where xCoordinates are available:
+producersExist <- producerAdress[-which(is.na(producerAdress$xCoord)),]
+
+warning( paste0("The producers " , paste0(producerAdress[which(is.na(producerAdress$xCoord)),"Lieferant"], collapse = ", "), " cannot be diplayed"))
+## St georgener BAuer: Untermühlbachhof
+##  Kaiserstühler Hof: Hof Homberg (google vom stühli)
+
+## ändern: Stefan zu Stefan Chab Honig Imker (oder so)
+
+# convert producers to spatialpointsdataframe
+coordinates(producersExist) <- ~xCoord + yCoord
+
+# create productOrigin SpatialPointsDataFrame only with existing origins:
+productOriginExist <- productOrigin[!( is.na(productOrigin$xCoord) | is.na(productOrigin$yCoord)),]
+coordinates(productOriginExist) <- ~xCoord + yCoord
+
+coordinates(Kornkammer) <- ~xCoord + yCoord
+crs(Kornkammer) <-  "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
+
+crs(producersExist) <- "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
+
+crs(productOriginExist) <- crs(producersExist)
+
+#writeOGR(productOriginExist, "data/productOriginExist/", "productOriginExist", "ESRI Shapefile")
+#writeOGR(producersExist, "data/producersExist/", "producersExist", "ESRI Shapefile")
+#writeOGR(Kornkammer, "data/Kornkammer/", "Kornkammer", "ESRI Shapefile")
+
+
+dbDisconnect(con)
+
+##################
+
+```
+
+
+```{r, echo=FALSE, error=TRUE, message=FALSE, warning=FALSE}
+
+##########
+createCurves <- function(i, tD = totalDistances, pEx = producersExist, pOE = productOriginExist){
+  productOriginExist <- pOE
+  producersExist <- pEx
+  totalDistances <- tD
+  pE <- which(producersExist$Lieferant == totalDistances$Lieferant[i])
+  if(totalDistances$Lieferantentyp[i] == "Zwischenhaendler" & 
+     totalDistances$Lieferant[i] %in% unique(productOriginExist$Lieferant)){
+    
+    z <- which(productOriginExist$Lieferant == totalDistances$Lieferant[i] &
+                 productOriginExist$Produkte_Zusammenfassung == totalDistances$Produkte_Zusammenfassung[i] &
+                 productOriginExist$Ort == totalDistances$Ort[i])
+    Li <- Lines(list(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), 
+               Line(gcIntermediate(coordinates(producersExist)[pE,], coordinates(productOriginExist)[z,], addStartEnd = T))) , ID = i)
+  } else {
+    Li <- Lines(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), ID = i)
+  }
+  return(Li)
+}
+
+
+liste <- list()
+for(i in 1:nrow(totalDistances)){
+  liste[[i]] <- createCurves(i)
+}
+
+producersL <- SpatialLines(liste, proj4string = crs(producersExist)) #crs(producersExist)
+producersInfo <- SpatialLinesDataFrame(producersL, totalDistances)
+
+pal2 <- colorNumeric(
+  palette = "viridis",
+  domain = producersInfo$avg.turnover, n = 10, reverse = F)
+dashs <- producersInfo$Herkunftsgenauigkeit
+
+dashs[which(dashs == 2)] <- 1
+dashs[which(dashs == 1)] <- 0
+dashs[which(dashs != 0)] <- 10
+dash <- as.character(dashs)
+
+leaflet(producersInfo) %>% 
+  addProviderTiles(providers$CartoDB.Positron) %>% 
+  addPolylines(weight = ifelse((producersInfo$avg.turnover/15) < 2, 2, (producersInfo$avg.turnover)/15),
+               color = ~pal2(producersInfo$avg.turnover),
+               popup = producersInfo$Produkte_Zusammenfassung, dashArray = dashs) %>% 
+  addLegend(pal = pal2, values = ~producersInfo$avg.turnover, title = "avg.turnover",
+            labFormat = labelFormat(suffix = " kg/yr"))
+
+```
 
 # Discussion
 

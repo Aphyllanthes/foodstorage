@@ -3,20 +3,154 @@ library(shiny)
 library(dplyr)
 library(ggplot2)
 library(leaflet)
-library(foodstorage)
+#library(foodstorage)
 library(rgdal)
 
-Kornkammer <- readOGR("../data/Kornkammer/", "Kornkammer")
-producersInfo <- readOGR("../data/producersInfo/", "producersInfo")
+####
+# packages for data preparation:
+library(RSQLite)
+library(data.table)
+library(sf)
+library(raster)
+library(tidyr)
+library("geosphere")
+####
 
-names(producersInfo) <- c('X', 'Produkte_App', 'Produkte_Zusammenfassung', 'Produktgruppe', 'Verpackungseinheit', 'Lieferant', 'Ort', 'EntfernungZwischenhaendler', 'Herkunftsgenauigkeit', 'Lieferantentyp', 'EntfernungKK', 'Gesamtentfernung', 'n', 'turnover2015', 'turnover2016', 'turnover2017', 'avg.turnover')
-producersInfo$avg.turnover <- as.numeric(producersInfo$avg.turnover)
-producersInfo$Gesamtentfernung <- as.numeric(producersInfo$Gesamtentfernung)
-producersInfo$turnover2017 <- as.numeric(producersInfo$turnover2017)
-producersInfo$Produktgruppe <- as.character(producersInfo$Produktgruppe)
-producersInfo$Produkte_Zusammenfassung <- as.character(producersInfo$Produkte_Zusammenfassung)
+######## generateGeoData ##############
+con <- dbConnect(SQLite(), "../data/kornInfo.sqlite")
 
-totalDistances <- as.data.frame(producersInfo)
+productInfo <- dbGetQuery(con, "SELECT * FROM productInfo")
+producerAdress <- dbGetQuery(con, "Select * from producerAdress")
+kornumsatz <- dbGetQuery(con, "SELECT * FROM kornumsatz_origin")
+origin <- dbGetQuery(con, "SELECT * FROM productOrigin")
+Kornkammer <- dbGetQuery(con, "SELECT * from AdresseKornkammer")
+
+productOrigin <- origin
+
+KUperYear <- kornumsatz_perYear(kornumsatz = kornumsatz, productInfo = productInfo)
+KU <- KUperYear %>% 
+  spread(Jahr, Umsatz) %>% 
+  mutate(avg = mean(c(`2016`, `2017`), na.rm = T))
+names(KU) <- c("Produkte_Zusammenfassung", "turnover2015", "turnover2016", "turnover2017", "avg.turnover")
+
+originWithDistances <- SupplierDistance(origin, producerAdress)
+
+##############
+totalDistancesFun <- function(origin = productOrigin, producers = producerAdress, productInfo){
+  ## the funciton SupplierDistance from the script "calculateDistances_Anna.R"
+  originWithDistances <- SupplierDistance(origin, producers)
+  
+  # gather the two columns "Lieferant" and "Lieferant2" into seperated rows.
+  products <- productInfo %>%
+    gather("n", "Lieferant", 3:4) %>%
+    filter(Lieferant != "") %>%
+    dplyr::select(-n)
+  
+  # join the originWithDistances to the products table
+  products1 <- products %>%
+    left_join(originWithDistances[, c("Lieferant", "Produkte_Zusammenfassung", "Ort", "EntfernungZwischenhaendler", "Herkunftsgenauigkeit")], by=c("Lieferant", "Produkte_Zusammenfassung"))
+  
+  # join the Distances to the producer from the producerAdress-table to the products table
+  producerAdress$EntfernungKK <- as.numeric(producerAdress$EntfernungKK)
+  products2 <- products1 %>%
+    left_join(producerAdress[, c("Lieferant", "Lieferantentyp", "EntfernungKK")], by= "Lieferant") %>%
+    mutate(EntfernungZwischenhaendler = ifelse(Lieferantentyp == "Zwischenhaendler",
+                                               EntfernungZwischenhaendler, 0)) %>%
+    mutate(Gesamtentfernung = EntfernungKK + EntfernungZwischenhaendler)
+  return(products2)
+}
+
+##############
+
+totalDistances <- totalDistancesFun(origin = origin, producers = producerAdress, productInfo = productInfo)
+
+## count occurance of every product in the table, to split the turnover of the product to the different occurances.
+totalDistances <- totalDistances %>% 
+  add_count(Produkte_Zusammenfassung) %>% 
+  left_join(KU, by = "Produkte_Zusammenfassung") %>% 
+  mutate(turnover2015 = turnover2015 / n) %>% 
+  mutate(turnover2016 = turnover2016 / n) %>% 
+  mutate(turnover2017 = turnover2017 / n) %>% 
+  mutate(avg.turnover = avg.turnover / n) %>% 
+  mutate(Herkunftsgenauigkeit = ifelse(Lieferantentyp == "Erzeuger", 1, Herkunftsgenauigkeit))
+
+meanDists <- totalDistances %>% 
+  group_by(Produktgruppe) %>% 
+  summarise(avgDistance = mean(Gesamtentfernung, na.rm=T))
+
+######
+## prepare data for the plot:
+producerAdress$xCoord <- as.numeric(producerAdress$xCoord)
+producerAdress$yCoord <- as.numeric(producerAdress$yCoord)
+## we only want to plot the producers where xCoordinates are available:
+producersExist <- producerAdress
+
+#warning( paste0("The producers " , paste0(producerAdress[which(is.na(producerAdress$xCoord)),"Lieferant"], collapse = ", "), " cannot be diplayed"))
+## St georgener BAuer: Untermühlbachhof
+##  Kaiserstühler Hof: Hof Homberg (google vom stühli)
+
+## ändern: Stefan zu Stefan Chab Honig Imker (oder so)
+
+# convert producers to spatialpointsdataframe
+coordinates(producersExist) <- ~xCoord + yCoord
+
+# create productOrigin SpatialPointsDataFrame only with existing origins:
+productOriginExist <- productOrigin[!( is.na(productOrigin$xCoord) | is.na(productOrigin$yCoord)),]
+coordinates(productOriginExist) <- ~xCoord + yCoord
+
+coordinates(Kornkammer) <- ~xCoord + yCoord
+crs(Kornkammer) <-  "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
+crs(producersExist) <- "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
+crs(productOriginExist) <- crs(producersExist)
+
+dbDisconnect(con)
+
+########### create Curves Function ##################
+
+createCurves <- function(i, tD = totalDistances, pEx = producersExist, pOE = productOriginExist){
+  productOriginExist <- pOE
+  producersExist <- pEx
+  totalDistances <- tD
+  pE <- which(producersExist$Lieferant == totalDistances$Lieferant[i])
+  if(totalDistances$Lieferantentyp[i] == "Zwischenhaendler" & 
+     totalDistances$Lieferant[i] %in% unique(productOriginExist$Lieferant) & length(pE) > 0){
+    
+    z <- which(productOriginExist$Lieferant == totalDistances$Lieferant[i] &
+                 productOriginExist$Produkte_Zusammenfassung == totalDistances$Produkte_Zusammenfassung[i] &
+                 productOriginExist$Ort == totalDistances$Ort[i])
+    Li <- Lines(list(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), 
+                     Line(gcIntermediate(coordinates(producersExist)[pE,], coordinates(productOriginExist)[z,], addStartEnd = T))) , ID = i)
+  } else {
+    if(length(pE)>0){
+      Li <- Lines(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), ID = i)
+      } else {Li <- Lines(Line(coords = cbind(x = c(0,0), y = c(0,0))), ID = i)}
+  }
+  return(Li)
+}
+
+
+liste <- list()
+
+for(i in 1:nrow(totalDistances)){
+  liste[[i]] <- createCurves(i)
+}
+
+producersL <- SpatialLines(liste, proj4string = crs(producersExist)) #crs(producersExist)
+producersInfo <- SpatialLinesDataFrame(producersL, totalDistances)
+
+
+
+#################
+# producersInfo <- readOGR("../data/producersInfo/", "producersInfo")
+# 
+# names(producersInfo) <- c('X', 'Produkte_App', 'Produkte_Zusammenfassung', 'Produktgruppe', 'Verpackungseinheit', 'Lieferant', 'Ort', 'EntfernungZwischenhaendler', 'Herkunftsgenauigkeit', 'Lieferantentyp', 'EntfernungKK', 'Gesamtentfernung', 'n', 'turnover2015', 'turnover2016', 'turnover2017', 'avg.turnover')
+# producersInfo$avg.turnover <- as.numeric(producersInfo$avg.turnover)
+# producersInfo$Gesamtentfernung <- as.numeric(producersInfo$Gesamtentfernung)
+# producersInfo$turnover2017 <- as.numeric(producersInfo$turnover2017)
+# producersInfo$Produktgruppe <- as.character(producersInfo$Produktgruppe)
+# producersInfo$Produkte_Zusammenfassung <- as.character(producersInfo$Produkte_Zusammenfassung)
+# 
+# totalDistances <- as.data.frame(producersInfo)
 
 newtotalDistances <- createDistanceCategory(totalDistances)
 
