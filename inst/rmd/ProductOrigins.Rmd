@@ -14,13 +14,12 @@ library(ggplot2)
 library(RSQLite)
 #library(readr)
 library(data.table)
-library(sf)
-library(rgdal)
+#library(sf)
+#library(rgdal)
 library(dplyr)
 library(raster)
 library(tidyr)
 library(foodstorage)
-library(rgdal)
 ```
 
 # Introduction
@@ -77,7 +76,7 @@ shiny-app !
 
 
 # Results
-```{r, message=FALSE, warning=FALSE, include=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 producersInfoStraight <- readOGR("../../data/producersInfoStraight/", "producersInfoStraight")
 producersInfo <- readOGR("../../data/producersInfo/", "producersInfo")
 producersRoutes <- readOGR("../../data/producersRoutes/", "producersRoutes")
