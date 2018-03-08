@@ -61,18 +61,22 @@ Products of farmers are categorised with the category 1.
 ## data processing
 In a next step we used the function "geocode" from the package "ggmap" to convert the adresses of our suppliers and the information about the origin of the products from whole salers into coordinates. In the cases, that only the information about the country of a product's origin was available, the resulting geoposition calculated by the geocode function was located in the middle of the country.
 
-Afterwards we used the function "spDists" from the package "sp" to calculate the distances from the foodcoop to the suppliers and, if a supplier was a whole saler, the distance from the supplier to the location of the product's origin. The sum of the distances gave the total distance a product traveled. For those products, where no information about the origin was available, no total distance could be calculated and the products are represented as NA (missing values) in the following statistics.
+Afterwards we used the function "spDists" from the package "sp" to calculate the distances from the foodcoop to the suppliers and, if a supplier was a whole saler, the distance from the supplier to the location of the product's origin. The function "spDist" uses the Great Circle distance method on the WGS84 ellipsoid. The sum of the distances gave the total distance a product traveled. For those products, where no information about the origin was available, no total distance could be calculated and the products are represented as NA (missing values) in the following statistics.
 
 Regarding the inaccuracy about the real distance a product had traveled, the purpose of the calculated distances is to illustrate the regional or global origin. Nevertheless the actual driving distance can also be estimated by using the function "osrmRoute" from the package "osrm".
 
 For every product a Spatial Layer that stores its transport Route was created. The layers of all products are stored in one Shapefile, that contains all informations of the products in its attributes-table.
 
 ## data visualisation
-The products average turnover per Year is analysed regarding the total distance the product had been transported and the accuracy of its origin.
+The products average turnover per Year is analysed regarding the total distance the product had been transported and the accuracy of its origin. Additionaly the total distance is grouped into intervals, that have a quardratic increase with increasing distance. Barplots of the average turnover for every distance-interval are build.
 
+To geovisualise the data, the generated Shapefiles are used. 
 The Shapefile that includes the transport Routes of all products is visualised using the package leaflet, a tool to create interactive maps.
 
-Transport Routes are visualised as the actual driving distance, as the shortes distance between the two location on the earth (great circle) and simply as a straight line between the two locations on the map.
+Three different display options were used to visualise the transport Routes between two locations:
+ - tha actual driving distance
+ - the shortes distance on the sheroid (great-circle or orthodromic distance)
+ - a straight line on the map
 
 # Results
 ```{r, message=FALSE, warning=FALSE, include=FALSE}
@@ -128,9 +132,8 @@ ggplot(totalDistances, aes(Gesamtentfernung, avg.turnover, color = Herkunftsgena
 
 ```
 
-- statistics of distances
-- statistics of quantities
-```{r}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The distance the products had been transported from its origin to the FoodCoop, colored by the product groups. The products were grouped into intervals of the distance. The size of the intervals increases quadraticaly with increasing distance."}
 newtotalDistances <- createDistanceCategory(totalDistances)
 
 positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200", "3200-6400", "6400-12800", "NA")
@@ -138,14 +141,14 @@ positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200"
 ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgruppe)) +
   geom_bar(stat = "identity") +
   scale_x_discrete(limits = positions)+
-  labs(title = "Konsumierte Produkte nach Distanz", 
-       y = "Umsatz in kg bzw. L",
-       x = "Distanz [km]")
+  labs(title = "Consumed products and their transport distance", 
+       y = "Turnover [kg]",
+       x = "Distance [km]")  +
+  guides(color=guide_legend(title="Product group"))
 
 ```
 
-- plots 
-- maps
+
 For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure \ref{fig1} : 
 
 
@@ -201,7 +204,11 @@ many studies show that distance traveled is actually a poor indicator
 of total environmental impact (e.g., see Coley et al., 2009; Mason
 et al., 2002; Teisl, 2011).
 
+The large amount of products, whose origin is unknown and therefore represented in the results as missing values (NA) is mostly caused due to the missing information of the wholesale "Bode". This gap of information could either be filled with data from a further research, or a change of the supplier could be considered. The latter is an option, since most products ordered from "Bode" are also available at other existing suppliers and for only few products a new supplier is to be found.
+
 - further analytics
+
+- calculation was done with turnover in kg, but the data is only in this unit for most products, some data has the unit liters or piece, where the the worst case is the chocolate, where the piece only weights 100 g and the data is wrong with a factor of 10.
 
 - some products from suppliers come even from sub-suppliers, who get the products form its real origin! (e.g. some products from OBEG are from BYODO)
 
