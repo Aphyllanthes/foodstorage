@@ -4,7 +4,7 @@ author: "Nele, Anna and Miri"
 date: "2 März 2018"
 output:
   pdf_document: default
-  html_document: default
+  fig_caption: true
 bibliography: bibliography.bib
 ---
 
@@ -20,6 +20,7 @@ library(dplyr)
 library(raster)
 library(tidyr)
 library(foodstorage)
+library(leaflet)
 ```
 
 # Introduction
@@ -41,39 +42,41 @@ This study tries to investigate the transport distances of the products consumed
 
 The foodcoop "Kornkammer" uses a tablet with an app to manage the inventory of products, to enter deliveries and to process the purchases of the members. The app stores all bookings related to these tasks in an SQLite database. 
 
-We used the database to extract information on the products available in the foodcoop, their suppliers and their turnovers. For the SQL queries and all other computing we used the R software version 3.4.3 [@RCoreTeam]. The SQL queries were done with the R package "RSQLite". Next, we extended the information stored in the database with the adresses of the suppliers. 
+We used the database to extract information on the products available in the foodcoop, as their suppliers and their turnovers. For the SQL queries and all other computing we used the R software version 3.4.3 [@RCoreTeam]. The SQL queries were done with the R package "RSQLite". Next, we extended the information stored in the database with the adresses of the suppliers. 
 
 We decided to devide the suppliers into three categories: 
 
-- farmers (translation in web app: Erzeuger): A supplier who grows grains/legumes/etc. and directly sells its products to the foodcoop. Beekeepers were also summarized under this category.
+- farmers (translation in web app: Erzeuger): A supplier who grows grains/legumes/etc. and directly sells its products to the foodcoop. Beekeepers were also summarized in this category.
 - manufacturers (translation in web app: Produzent): A supplier who produces products like detergent or bread spread which consist of many ingredients. 
-- whole salers (Translation in web app: Zwischenhändler): A supplier who bought products from growers or even other intermediate agents. Assosiations which support cooperatives by purchasing olive oil, cashew nuts or spices directly from the cooperatives were also summarized under this category.
+- whole salers (Translation in web app: Zwischenhändler): A supplier who bought products from growers or even other intermediate agents. Assosiations which support cooperatives by purchasing olive oil, cashew nuts or spices directly from the cooperatives were also summarized in this category.
 
 Following, we tried to find out the origin of the products sold by the whole salers. We classified the accuracy of the information we got into three categories: 
 
+- 1 = origin exactly known (with adress)
+- 2 = region or country of product origin known
+- 3 = information about origin not available, therefore only a guess of origin
 
-  - the accuracy of the origin of the products is described with 3 levels: 
-    1 = origin exactly known (with adress)
-    2 = region or country of product origin known
-    3 = information about origin not available, therefore only a guess of origin
-
+Products of farmers are categorised with the category 1.
 
 ## data processing
-In a next step we used the function "geocode" from the package "ggmap" to convert the adresses of our suppliers and the information about the origin of the products from whole salers into coordinates. If we knew only the country of a product's origin the resulting geoposition calculated by the geocode function was located in the middle of the country.
+In a next step we used the function "geocode" from the package "ggmap" to convert the adresses of our suppliers and the information about the origin of the products from whole salers into coordinates. In the cases, that only the information about the country of a product's origin was available, the resulting geoposition calculated by the geocode function was located in the middle of the country.
 
-After that we used the function "spDists" from the package "sp" to calculate the distances from the foodcoop to the suppliers and, if a supplier was a whole saler, the distance from the supplier to the location of the product's origin. The sum of the distances gave the total distance a product traveled.
+Afterwards we used the function "spDists" from the package "sp" to calculate the distances from the foodcoop to the suppliers and, if a supplier was a whole saler, the distance from the supplier to the location of the product's origin. The function "spDist" uses the Great Circle distance method on the WGS84 ellipsoid. The sum of the distances gave the total distance a product traveled. For those products, where no information about the origin was available, no total distance could be calculated and the products are represented as NA (missing values) in the following statistics.
 
-- create points and Lines SpatialPointsDataFrame and SpatialLinesdataFrames that contain attributes of products and transport path information bzw. origin/supplier/FoodCoop locations
+Regarding the inaccuracy about the real distance a product had traveled, the purpose of the calculated distances is to illustrate the regional or global origin. Nevertheless the actual driving distance can also be estimated by using the function "osrmRoute" from the package "osrm".
 
-- explain R-functions we wrote (??)
-
-- ? workflow : wie readme
+For every product a Spatial Layer that stores its transport Route was created. The layers of all products are stored in one Shapefile, that contains all informations of the products in its attributes-table.
 
 ## data visualisation
-- leaflet-maps
-- ggplots
-shiny-app !
+The products average turnover per Year is analysed regarding the total distance the product had been transported and the accuracy of its origin. Additionaly the total distance is grouped into intervals, that have a quardratic increase with increasing distance. Barplots of the average turnover for every distance-interval are build.
 
+To geovisualise the data, the generated Shapefiles are used. 
+The Shapefile that includes the transport Routes of all products is visualised using the package leaflet, a tool to create interactive maps.
+
+Three different display options were used to visualise the transport Routes between two locations:
+ - tha actual driving distance
+ - the shortes distance on the sheroid (great-circle or orthodromic distance)
+ - a straight line on the map
 
 # Results
 
@@ -85,6 +88,12 @@ producersRoutes <- readOGR("../../data/producersRoutes/", "producersRoutes")
 producersExist <- readOGR("../../data/producersExist/", "producersExist")
 Kornkammer <- readOGR("../../data/Kornkammer/", "Kornkammer")
 
+names(producersInfo) <- c('Produkte_App', 'Produkte_Zusammenfassung', 'Produktgruppe', 'Verpackungseinheit', 'Lieferant', 'Ort', 'EntfernungZwischenhaendler', 'Herkunftsgenauigkeit', 'Lieferantentyp', 'EntfernungKK', 'Gesamtentfernung', 'n', 'turnover2015', 'turnover2016', 'turnover2017', 'avg.turnover')
+producersInfo$avg.turnover <- as.numeric(producersInfo$avg.turnover)
+producersInfo$Gesamtentfernung <- as.numeric(producersInfo$Gesamtentfernung)
+producersInfo$turnover2017 <- as.numeric(producersInfo$turnover2017)
+producersInfo$Produktgruppe <- as.character(producersInfo$Produktgruppe)
+producersInfo$Produkte_Zusammenfassung <- as.character(producersInfo$Produkte_Zusammenfassung)
 ```
 
 
@@ -112,16 +121,59 @@ For every product that has ever been ordered by the FoodCoop, the transportation
 ![](../../map1.png){width=250px}
 shows the actual driving directions for all products from its last transfer point. 
 
-```{r, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-library(leaflet)
 
+```{r createDistanceCateogriyFunction, message=FALSE, warning=FALSE, include=FALSE}
+createDistanceCategory <- function(totalDistances) {
+  
+  newtotalDistances <- mutate(totalDistances, "Kategorie" = NA)
+  
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung <= 100] <- "0-100"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 100 & newtotalDistances$Gesamtentfernung <= 200] <- "100-200"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 200 & newtotalDistances$Gesamtentfernung <= 400] <- "200-400"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 400 & newtotalDistances$Gesamtentfernung <= 800] <- "400-800"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 800 & newtotalDistances$Gesamtentfernung <= 1600] <- "800-1600"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 1600 & newtotalDistances$Gesamtentfernung <= 3200] <- "1600-3200"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 3200 & newtotalDistances$Gesamtentfernung <= 6400] <- "3200-6400"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 6400 & newtotalDistances$Gesamtentfernung <= 12800] <- "6400-12800"
+  newtotalDistances$Kategorie[is.na(newtotalDistances$Gesamtentfernung) == TRUE] <- "NA"
+  
+  return(newtotalDistances)
+}
+```
+
+
+
+
+For those products, that didn't grow at its last transfer point, the distance from its last transfer poit to its origin can be calculated, in the case that its origin is known.
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The distance the products had been transported from its origin to the FoodCoop, colored by the product groups. The products were grouped into intervals of the distance. The size of the intervals increases quadraticaly with increasing distance."}
+newtotalDistances <- createDistanceCategory(totalDistances)
+
+positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200", "3200-6400", "6400-12800", "NA")
+
+ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgruppe)) +
+  geom_bar(stat = "identity") +
+  scale_x_discrete(limits = positions)+
+  labs(title = "Consumed products and their transport distance", 
+       y = "Turnover [kg]",
+       x = "Distance [km]")  +
+  guides(color=guide_legend(title="Product group"))
+
+```
+
+
+For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure \ref{fig1} : 
+
+
+```{r map1, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
 pal <- colorFactor(c("darkgreen", "blue", "red"), domain = c(  "Erzeuger", "Produzent", "Zwischenhaendler"))
 KKIcon <- iconList(
   Kornkammer = makeIcon("../../data/icon-2.png", "../../data/icon-2.png", 24, 24)
 )
 
 leaflet(producersExist) %>%
-  addTiles() %>%
+  addProviderTiles(providers$CartoDB.Positron) %>% 
   addCircleMarkers(radius = 6,
                    stroke = FALSE, fillOpacity = 0.8, color=pal(producersExist$Lfrntnt),
                    popup = producersExist$Liefrnt) %>%  #, clusterOptions = markerClusterOptions()
@@ -138,29 +190,9 @@ leaflet(producersExist) %>%
 
 ```
 
-For those products, that didn't grow at its last transfer point, the distance from its last transfer poit to its origin can be calculated, in the case that its origin is known.
+shows the actual driving directions for all products from its last transfer point. 
 
-
-
-- statistics of distances
-- statistics of quantities
-```{r eval=FALSE, include=FALSE}
-newtotalDistances <- createDistanceCategory(totalDistances)
-
-positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200", "3200-6400", "6400-12800", "NA")
-
-ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgruppe)) +
-  geom_bar(stat = "identity") +
-  scale_x_discrete(limits = positions)+
-  labs(title = "Konsumierte Produkte nach Distanz", 
-       y = "Umsatz in kg bzw. L",
-       x = "Distanz [km]")
-
-```
-
-- plots 
-- maps
-
+![](../../map2.png){width=250px}
 
 # Discussion
 
@@ -172,6 +204,7 @@ upstream of the farm (e.g., transport of farm equipment and
 supplies to the farm), which may be important for life-cycle
 GHG emissions.
 
+ ... no caclulation of the actual driving routes because of inaccuracy of the information - no importance ... especcially for products from far.
 
 Thus, transportation may be one of the main targets when a conventional energy analysis
 is used, but not when greenhouse gas emissions from all sources are accounted for. When
@@ -185,7 +218,11 @@ many studies show that distance traveled is actually a poor indicator
 of total environmental impact (e.g., see Coley et al., 2009; Mason
 et al., 2002; Teisl, 2011).
 
+The large amount of products, whose origin is unknown and therefore represented in the results as missing values (NA) is mostly caused due to the missing information of the wholesale "Bode". This gap of information could either be filled with data from a further research, or a change of the supplier could be considered. The latter is an option, since most products ordered from "Bode" are also available at other existing suppliers and for only few products a new supplier is to be found.
+
 - further analytics
+
+- calculation was done with turnover in kg, but the data is only in this unit for most products, some data has the unit liters or piece, where the the worst case is the chocolate, where the piece only weights 100 g and the data is wrong with a factor of 10.
 
 - some products from suppliers come even from sub-suppliers, who get the products form its real origin! (e.g. some products from OBEG are from BYODO)
 

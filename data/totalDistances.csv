@@ -1,316 +1,316 @@
-"Produkte_App";"Produkte_Zusammenfassung";"Produktgruppe";"Verpackungseinheit";"Lieferant";"Ort";"EntfernungZwischenhaendler";"Herkunftsgenauigkeit";"Lieferantentyp";"EntfernungKK";"Gesamtentfernung";"n";"turnover2015";"turnover2016";"turnover2017";"avg.turnover"
-"Allesreiniger";"Allesreiniger";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;20;NA;20
-"Apfelessig";"Apfelessig";"Öl und Essig";"5";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;20;10;15
-"Arborio Reis";"Rundkornreis";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
-"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"OBEG";"Rumänien";1187,95593171882;3;"Zwischenhaendler";212,62569395508;1400,5816256739;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Basilikum";"Basilikum";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1;0,103;0,5515
-"Basitom";"Basitom";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
-"Basmati Braun";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
-"Basmati Weiß";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
-"Beluglinsen";"Linsen Beluga";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;12,66;12,371;NA;12,371
-"Blaumohn";"Blaumohn";"Ölsaaten und Nüsse";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4,628;NA;4,628
-"Bockshornklee Ganz";"Bockshornklee Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,25;0,25;0,25
-"Bohnen";"Bohnen schwarz";"Hülsenfrüchte";"25";"Wolfgang Hees";NA;0;NA;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;20,274;NA;20,274
-"Bohnen Borlotti";"Bohnen Borlotti";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;5;13,814;NA;13,814
-"Borlottibohnen";"Bohnen Borlotti";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;5;13,814;NA;13,814
-"Braune Linsen";"Linsen Braun";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;8,33333333333333;12,8043333333333;NA;12,8043333333333
-"brauner Basmati";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
-"Braunhirse";"Hirse Braun";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;8,386;8,484;NA;8,484
-"Buchweizen";"Buchweizen";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;12,5;23,74;27,527;25,6335
-"Buchweizenmehl";"Buchweizenmehl";"Grundnahrungsmittel";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;5;NA;5
-"Cashews";"Cashews";"Ölsaaten und Nüsse";"25";"Cashew4You";"Enugu, Nigeria";4570,92944992498;2;"Zwischenhaendler";105,291962397502;4676,22141232248;2;NA;11,034;22,705;16,8695
-"Chilli Gemahlen";"Chilli Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,23925;0,35625;0,29775
-"Couscous";"Couscous";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;25;57,608;25;41,304
-"Currychini";"Currychini";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;6;NA;6
-"Dinkel";"Dinkel";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;NA;"Erzeuger";24,8237399290683;24,8237399290683;1;50;149,366;59,902;104,634
-"Dinkel Drink";"Drink Dinkel";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;2;65;49,5;100;74,75
-"Drink Buchweizen";"Drink Buchweizen";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;1;NA;29;100;64,5
-"Drink Dinkel";"Drink Dinkel";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;2;65;49,5;100;74,75
-"Drink Hafer";"Drink Hafer";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;2;65;49;160;104,5
-"Drink Soja";"Drink Soja";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;2;50;50;73;61,5
-"Erdnussmus";"Erdnussmus";"Aufstriche";"10";"Rapunzel";"China";7432,77877553574;3;"Zwischenhaendler";170,424986104297;7603,20376164004;4;NA;2,33;3,6415;2,98575
-"Gemüsebrühe";"Gemüsebrühe";"Sonstiges";"10";"Naturata";"Schweiz";246,45691488885;2;"Zwischenhaendler";142,914375788986;389,371290677836;1;NA;14;7,516;10,758
-"Getrocknete Äpfel";"Getrocknetes Gemüse";"Sonstiges";"10";"Sonnenobst";NA;0;NA;"Erzeuger";12,1097163235784;12,1097163235784;3;0,96;15,3406666666667;0,229333333333333;7,785
-"Getrocknete Paprika";"Getrocknetes Gemüse";"Sonstiges";"10";"Sonnenobst";NA;0;NA;"Erzeuger";12,1097163235784;12,1097163235784;3;0,96;15,3406666666667;0,229333333333333;7,785
-"Getrocknetes Gemüse";"Getrocknetes Gemüse";"Sonstiges";"10";"Sonnenobst";NA;0;NA;"Erzeuger";12,1097163235784;12,1097163235784;3;0,96;15,3406666666667;0,229333333333333;7,785
-"Goldhirse";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
-"Goldhirse Neu";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
-"Grünkern";"Grünkern";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;NA;14,308;21,377;17,8425
-"Hafer";"Hafer";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;NA;"Erzeuger";24,8237399290683;24,8237399290683;1;50;51,736;3,89;27,813
-"Hafer Drink";"Drink Hafer";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;2;65;49;160;104,5
-"Haferflocken";"Haferflocken";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;25,57;150,154;151,788;150,971
-"Haselnüsse geschält";"Haselnüsse";"Ölsaaten und Nüsse";"25";"Hofgut Unterbach";NA;0;NA;"Erzeuger";99,4243907072954;99,4243907072954;2;NA;10;10;10
-"Hirse Braun";"Hirse Braun";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;8,386;8,484;NA;8,484
-"Honig";"Honig";"Sonstiges";"10";"Erik";NA;0;NA;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Ingwer Gemahlen";"Ingwer Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;1,033;NA;1,033
-"Kaffee Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Honduras";9067,26543847171;2;"Zwischenhaendler";4,27564270544115;9071,54108117715;4;NA;7,428;4,812;6,12
-"Kaffee Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Indien";6941,63377165179;2;"Zwischenhaendler";4,27564270544115;6945,90941435723;4;NA;7,428;4,812;6,12
-"Kaffee Geröstet";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
-"Kaffee roh";"Kaffee roh";"Drinks, Säfte, Kaffee";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;1;2;3,48;NA;3,48
-"Kaffe Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Honduras";9067,26543847171;2;"Zwischenhaendler";4,27564270544115;9071,54108117715;4;NA;7,428;4,812;6,12
-"Kaffe Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Indien";6941,63377165179;2;"Zwischenhaendler";4,27564270544115;6945,90941435723;4;NA;7,428;4,812;6,12
-"Kaffee Zumba";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
-"Kaffe Zumba";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
-"Kardamom Ganz";"Kardamom Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,503;NA;0,503
-"Kichererbsen";"Kichererbsen";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;25;57,2;25;41,1
-"Kokosfett";"Kokosfett";"Sonstiges";"10";"Naturata";"Philippinen";10513,9421875838;2;"Zwischenhaendler";142,914375788986;10656,8565633727;1;NA;19;9,252;14,126
-"Koriander Ganz";"Koriander Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,692;0,596
-"Koriander Gemahlen";"Koriander Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5095;0,89;0,69975
-"Kräuter der Provence";"Kräuter der Provence";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,493;1,064;0,7785
-"Kreuzkümmel Ganz";"Kreuzkümmel Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,5;0,5
-"Kreuzkümmel Gemahlen";"Kreuzkümmel Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,57;0,535
-"Kümmel";"Kümmel";"Gewürze";"5";"OBEG";"Österreich";396,865387621061;3;"Zwischenhaendler";212,62569395508;609,491081576141;2;NA;2,4475;NA;2,4475
-"Kürbiskerne";"Kürbiskerne";"Ölsaaten und Nüsse";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;NA;12,5;26,8185;19,65925
-"Kurkuma Gemahlen";"Kurkuma Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,278;0,375;0,3265
-"Langkornreis Natur";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
-"Leinsamen";"Leinsamen";"Ölsaaten und Nüsse";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;NA;25,106;25;25,053
-"Linsen Beluga";"Linsen Beluga";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;12,66;12,371;NA;12,371
-"Linsen Braun";"Linsen Braun";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;8,33333333333333;12,8043333333333;NA;12,8043333333333
-"Mandelmus";"Mandelmus";"Aufstriche";"10";"Rapunzel";"USA";8079,72012512699;3;"Zwischenhaendler";170,424986104297;8250,14511123128;2;NA;4,664;3,532;4,098
-"Mepfel";"Mepfel";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
-"Olivenöl";"Olivenöl";"Öl und Essig";"5";"OBEG";"Griechenland";1481,14249831131;2;"Zwischenhaendler";212,62569395508;1693,76819226639;2;21,25;32,685;80,504;56,5945
-"Oregano";"Oregano";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;1,207;0,8535
-"Paprika Edelsüß";"Paprika Edelsüß";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,5;0,5
-"Penne semoltano";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
-"Pfeffer Schwarz Ganz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;3;"Zwischenhaendler";6,25755619582711;6744,38061003989;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
-"Polenta";"Polenta";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;12,8;13,042;0,603;6,8225
-"Rapsöl";"Rapsöl";"Öl und Essig";"10";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;25;NA;25
-"Risottoreis";"Risottoreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;13,31;10;11,655
-"Roggen";"Roggen";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;NA;"Erzeuger";24,8237399290683;24,8237399290683;1;51,16;50,864;49,174;50,019
-"Rohrohrzucker";"Zucker";"Sonstiges";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;6;4,16666666666667;12,5;9,742;11,121
-"Rosinen";"Sultaninen";"Trockenfrüchte";"12.5";"OBEG";"Iran";4062,97576055501;2;"Zwischenhaendler";212,62569395508;4275,60145451009;6;2,143;6,25;12,5585;9,40425
-"Rosmarin";"Rosmarin";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1;NA;1
-"Rote Beete Meerettich";"Rote Beete Meerettich";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
-"Rote Linsen";"Linsen Rot";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;5;5;14,9892;14,776;14,8826
-"Rote Linsen Neu";"Linsen Rot";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;5;5;14,9892;14,776;14,8826
-"Rübenzucker";"Zucker";"Sonstiges";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;6;4,16666666666667;12,5;9,742;11,121
-"Rübenzucker Sack";"Zucker";"Sonstiges";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;6;4,16666666666667;12,5;9,742;11,121
-"Rundkornreis";"Rundkornreis";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
-"Saft Apfel";"Saft Apfel";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;NA;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;102;34;68
-"Saft Apfel-Birne";"Saft Apfel-Birne";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;NA;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;23,686;19,21;21,448
-"Saft Apfel-Möhre";"Saft Apfel-Möhre";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;NA;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;6;NA;6
-"Saft Trauben";"Saft Trauben";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;NA;"Erzeuger";11,9371259981786;11,9371259981786;2;NA;14,843;9,5;12,1715
-"Salz";"Salz";"Gewürze";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;12,5;12,5;12,5
-"Samba";"Samba";"Aufstriche";"8";"Rapunzel";"Türkei";2247,45374723389;3;"Zwischenhaendler";170,424986104297;2417,87873333819;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
-"Samba – Schokoaufstrich";"Samba";"Aufstriche";"8";"Rapunzel";"Türkei";2247,45374723389;3;"Zwischenhaendler";170,424986104297;2417,87873333819;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
-"Schwarzkümmel";"Schwarzkümmel";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1,893;3,094;2,4935
-"Sendi";"Sendi";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
-"Senf Kirsche";"Senf Kirsche";"Aufstriche";"10";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;4,728;NA;4,728
-"Senfkörner";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
-"Senfkörner Ganz";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
-"Senfkörner Neu";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
-"Senf Mango";"Senf Mango";"Aufstriche";"10";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;2,314;2,141;2,2275
-"Senf Sarepta";"Senf Sarepta";"Aufstriche";"10";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;4,466;5;4,733
-"Sesam";"Sesam";"Ölsaaten und Nüsse";"25";"OBEG";"Äthiopien";5282,76359333491;2;"Zwischenhaendler";212,62569395508;5495,38928728999;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
-"Soja Drink";"Drink Soja";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;NA;"Erzeuger";69,84997949108;69,84997949108;2;50;50;73;61,5
-"Sonnenblumenkerne";"Sonnenblumenkerne";"Ölsaaten und Nüsse";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;25;76,566;75,829;76,1975
-"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"OBEG";"Rumänien";1187,95593171882;3;"Zwischenhaendler";212,62569395508;1400,5816256739;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"OBEG";"Rumänien";1187,95593171882;3;"Zwischenhaendler";212,62569395508;1400,5816256739;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblütenhonig";"Honig";"Sonstiges";"10";"Erik";NA;0;NA;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Spaghetti";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;4;3,75;16,66;2,8235;9,74175
-"Spaghetti semoltano";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;4;3,75;16,66;2,8235;9,74175
-"Spirelli";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
-"Spülmittel";"Spülmittel Hand";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;15;20;17,5
-"Spülmittel Hand";"Spülmittel Hand";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;15;20;17,5
-"Spülmittel Maschine";"Spülmittel Maschine";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;2;NA;5;5,064;5,032
-"Tellerlinsen";"Linsen Braun";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;8,33333333333333;12,8043333333333;NA;12,8043333333333
-"Thymian";"Thymian";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1,969;0,25;1,1095
-"Tomatenmark";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
-"Tomaten Mark";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
-"Tomatenpassata";"Tomatenpassata";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;6;NA;34;22;28
-"Tomaten Passata";"Tomatenpassata";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;6;NA;34;22;28
-"Walnüsse";"Walnüsse";"Ölsaaten und Nüsse";"25";"Hofgut Unterbach";NA;0;NA;"Erzeuger";99,4243907072954;99,4243907072954;1;NA;20;20;20
-"Waschmittel Lavendel";"Waschmittel Lavendel";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;20;57,487;38,7435
-"Waschmittel Normal";"Waschmittel Pulver";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;10;7,32133333333333;8,66066666666667
-"Waschmittel Pulver";"Waschmittel Pulver";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;10;7,32133333333333;8,66066666666667
-"Waschmittel Seide/Wolle";"Waschmittel Seide/Wolle";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;25;NA;25
-"Waschmittel Sensitiv";"Waschmittel Sensitiv";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;NA;NA;NA
-"Weinbeeren";"Sultaninen";"Trockenfrüchte";"12.5";"OBEG";"Iran";4062,97576055501;2;"Zwischenhaendler";212,62569395508;4275,60145451009;6;2,143;6,25;12,5585;9,40425
-"weißer Basmati";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
-"Weizen";"Weizen";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;NA;"Erzeuger";24,8237399290683;24,8237399290683;1;50,03;99,68;21,52;60,6
-"Zimt Ganz";"Zimt Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,6745;0,58725
-"Zimt Gemahlen";"Zimt Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;1,5;0,7525;1,12625
-"Zwiebelschmelz";"Zwiebelschmelz";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;10;NA;10
-"Ahornsirup";"Ahornsirup";"Sonstiges";"5";"Naturata";"Kanada";6927,83120397809;2;"Zwischenhaendler";142,914375788986;7070,74557976708;2;NA;2;6,1535;4,07675
-"Amaranth";"Amaranth";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;NA;NA;25;25
-"Best Cashew Feb 2017";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Bier Fur Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Bier Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Bockshornklee";"Bockshornklee Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,25;0,25;0,25
-"Cashew";"Cashews";"Ölsaaten und Nüsse";"25";"Cashew4You";"Enugu, Nigeria";4570,92944992498;2;"Zwischenhaendler";105,291962397502;4676,22141232248;2;NA;11,034;22,705;16,8695
-"Chilli";"Chilli Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,23925;0,35625;0,29775
-"Choco";"Choco Zartbitter Creme";"Aufstriche";"8";"Rapunzel";"Paraguay";10437,2788577706;3;"Zwischenhaendler";170,424986104297;10607,7038438749;2;NA;NA;7,312;7,312
-"Erdmussmus";"Erdnussmus";"Aufstriche";"10";"Rapunzel";"China";7432,77877553574;3;"Zwischenhaendler";170,424986104297;7603,20376164004;4;NA;2,33;3,6415;2,98575
-"Essig Apfel";"Apfelessig";"Öl und Essig";"5";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;20;10;15
-"Falschbuchung Hanfkoerner";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Feigen";"Feigen";"Trockenfrüchte";"12.5";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;1;NA;NA;NA;NA
-"Geschirrspülmittel";"Spülmittel Hand";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;15;20;17,5
-"Gruenkern";"Grünkern";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;NA;14,308;21,377;17,8425
-"Hanfkoerner";"Hanfkörner";"Ölsaaten und Nüsse";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;NA;NA;6,18533333333333;6,18533333333333
-"Hanfkörner";"Hanfkörner";"Ölsaaten und Nüsse";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;NA;NA;6,18533333333333;6,18533333333333
-"Hanfkoerner ";"Hanfkörner";"Ölsaaten und Nüsse";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;3;NA;NA;6,18533333333333;6,18533333333333
-"Haselnüsse";"Haselnüsse";"Ölsaaten und Nüsse";"25";"Hofgut Unterbach";NA;0;NA;"Erzeuger";99,4243907072954;99,4243907072954;2;NA;10;10;10
-"Hirse Gold";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
-"Hirse gold";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
-"Honig Frühjahrsblüte Glas";"Honig";"Sonstiges";"10";"Stefan";NA;0;NA;"Erzeuger";9,67804967252907;9,67804967252907;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Honig Schwarzwald Glas";"Honig";"Sonstiges";"10";"Stefan";NA;0;NA;"Erzeuger";9,67804967252907;9,67804967252907;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Honig Sommerblüte Eimer";"Honig";"Sonstiges";"10";"Erik";NA;0;NA;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Kaffee Nepal";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
-"Korrektur Hanfsamen";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Kräuter Der Provence";"Kräuter der Provence";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,493;1,064;0,7785
-"Kurkuma";"Kurkuma Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,278;0,375;0,3265
-"Langkornreis";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
-"Linsen Aa";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Linsen Alblinsen";"Linsen Alblinsen";"Hülsenfrüchte";"25";"Albleisa";NA;0;NA;"Erzeuger";130,015523134295;130,015523134295;1;NA;NA;25;25
-"Linsen Berglinsen";"Linsen Berglinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,231;29,231
-"Linsen Rot";"Linsen Rot";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;5;5;14,9892;14,776;14,8826
-"Linsen Tellerlinsen";"Linsen Tellerlinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,59;29,59
-"Linsen, Berglinsen";"Linsen Berglinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,231;29,231
-"Linsen, Tellerlinsen";"Linsen Tellerlinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,59;29,59
-"Maschinenspülmittel";"Spülmittel Maschine";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;2;NA;5;5,064;5,032
-"Muesli";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Nudeln Spaghetti Dinkel";"Spaghetti Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;2;NA;NA;20;20
-"Nudeln Spirelli GEMISCHT";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
-"Nudeln Spirelli Weizen";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
-"Nudeln, Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;6;NA;NA;7,81266666666667;7,81266666666667
-"Nudeln, Dinkel Vollkorn";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;6;NA;NA;7,81266666666667;7,81266666666667
-"Nudeln, Spirelli Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;6;NA;NA;7,81266666666667;7,81266666666667
-"Oreganum";"Oregano";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;1,207;0,8535
-"Paprikapulver Edelsüss";"Paprika Edelsüß";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,5;0,5
-"Passata";"Tomatenpassata";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;6;NA;34;22;28
-"Pfeffer";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;3;"Zwischenhaendler";6,25755619582711;6744,38061003989;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
-"Pfeffer schwarz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;3;"Zwischenhaendler";6,25755619582711;6744,38061003989;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
-"Reis Bastmati";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
-"Reis Langkorn";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
-"Reis Rundkorn Vollkorn";"Rundkornreis";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
-"Saft Traube";"Saft Trauben";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;NA;"Erzeuger";11,9371259981786;11,9371259981786;2;NA;14,843;9,5;12,1715
-"Schokolade Haselnuss";"Schokolade Haselnuss";"Sonstiges";"10";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;3;NA;NA;16,6666666666667;16,6666666666667
-"Schokolade Vollmilch";"Schokolade Haselnuss";"Sonstiges";"10";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;3;NA;NA;16,6666666666667;16,6666666666667
-"Schokolade Nuss";"Schokolade Haselnuss";"Sonstiges";"10";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;3;NA;NA;16,6666666666667;16,6666666666667
-"Schokolade Zartbitter";"Schokolade Zartbitter";"Sonstiges";"10";"OBEG";"Domenikanische Republik";7741,45707780716;3;"Zwischenhaendler";212,62569395508;7954,08277176224;1;NA;NA;50,886;50,886
-"Schokomus Sambe";"Samba";"Aufstriche";"8";"Rapunzel";"Türkei";2247,45374723389;3;"Zwischenhaendler";170,424986104297;2417,87873333819;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
-"Schokomus Zartbitter";"Choco Zartbitter Creme";"Aufstriche";"8";"Rapunzel";"Paraguay";10437,2788577706;3;"Zwischenhaendler";170,424986104297;10607,7038438749;2;NA;NA;7,312;7,312
-"Senf Kürbis Ingwer";"Senf Kürbis Ingwer";"Aufstriche";"5";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;NA;4,902;4,902
-"Sesam ";"Sesam";"Ölsaaten und Nüsse";"25";"OBEG";"Äthiopien";5282,76359333491;2;"Zwischenhaendler";212,62569395508;5495,38928728999;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
-"Sesam ungeschält";"Sesam";"Ölsaaten und Nüsse";"25";"OBEG";"Äthiopien";5282,76359333491;2;"Zwischenhaendler";212,62569395508;5495,38928728999;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
-"Sesammus";"Sesammus";"Aufstriche";"8";"Rapunzel";"Ägypten";2947,69313275129;3;"Zwischenhaendler";170,424986104297;3118,11811885559;2;NA;NA;5;5
-"Sonnenblumenöl -HO";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
-"Sonnenblumenöl Nativ";"Sonnenblumenöl kaltgepresst";"Öl und Essig";"5";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;1;NA;NA;44,58;44,58
-"Sonnenblumenöl Heiss";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
-"Sonnenblumenöl Hocherhitzbar";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
-"Sultaninen";"Sultaninen";"Trockenfrüchte";"12.5";"OBEG";"Iran";4062,97576055501;2;"Zwischenhaendler";212,62569395508;4275,60145451009;6;2,143;6,25;12,5585;9,40425
-"Tomaten Im Glas";"Tomaten Ganze Stücke";"Sonstiges";"10";"Querbeet";NA;0;NA;"Erzeuger";12,1844972061387;12,1844972061387;2;NA;NA;56,5;56,5
-"Tomaten im Glas";"Tomaten Ganze Stücke";"Sonstiges";"10";"Querbeet";NA;0;NA;"Erzeuger";12,1844972061387;12,1844972061387;2;NA;NA;56,5;56,5
-"Tomatenmark EDEN";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
-"Tomatenmark NATURATA";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
-"Vollrohrohrzucker";"Rohrohrzucker";"Sonstiges";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;NA;NA;NA
-"Waschpulver";"Waschmittel Pulver";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;10;7,32133333333333;8,66066666666667
-"Zuckerrübensirup";"Zuckerrübensirup";"Sonstiges";"5";"Naturata";"Uelzen, Deutschland";458,674439555324;1;"Zwischenhaendler";142,914375788986;601,58881534431;2;NA;NA;6,088;6,088
-"Essig Weisswein";"Weißweinessig";"Öl und Essig";"5";"Kaiserstühler Hof";NA;NA;NA;NA;NA;NA;1;NA;NA;20;20
-"Essig Rotwein";"Rotweinessig";"Öl und Essig";"5";"Kaiserstühler Hof";NA;NA;NA;NA;NA;NA;1;NA;NA;20;20
-"Sonnenblumenöl, EU ";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
-"Reis Basmati";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
-"Reis Risotto Weiß";"Risottoreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;13,31;10;11,655
-"Senfsaat Gelb";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
-"Waldhonig";"Honig";"Sonstiges";"10";"Stefan";NA;0;NA;"Erzeuger";9,67804967252907;9,67804967252907;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Arborio Reis";"Rundkornreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
-"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Italien";826,114189793074;2;"Zwischenhaendler";142,914375788986;969,02856558206;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Slovenien";531,814392729045;2;"Zwischenhaendler";142,914375788986;674,728768518031;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Rumänien";1229,38699728249;2;"Zwischenhaendler";142,914375788986;1372,30137307148;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Basmati Braun";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
-"Bockshornklee Ganz";"Bockshornklee Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,25;0,25;0,25
-"brauner Basmati";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
-"Buchweizen";"Buchweizen";"Grundnahrungsmittel";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;12,5;23,74;27,527;25,6335
-"Chilli Gemahlen";"Chilli Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,23925;0,35625;0,29775
-"Erdnussmus";"Erdnussmus";"Aufstriche";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;2,33;3,6415;2,98575
-"Goldhirse";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
-"Goldhirse Neu";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
-"Hirse Braun";"Hirse Braun";"Grundnahrungsmittel";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;3;8,386;8,484;NA;8,484
-"Ingwer Gemahlen";"Ingwer Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;1,033;NA;1,033
-"Kardamom Ganz";"Kardamom Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,503;NA;0,503
-"Koriander Ganz";"Koriander Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,692;0,596
-"Koriander Gemahlen";"Koriander Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5095;0,89;0,69975
-"Kreuzkümmel Ganz";"Kreuzkümmel Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,5;0,5
-"Kreuzkümmel Gemahlen";"Kreuzkümmel Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,57;0,535
-"Kümmel";"Kümmel";"Gewürze";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;2,4475;NA;2,4475
-"Kürbiskerne";"Kürbiskerne";"Ölsaaten und Nüsse";"25";"Schnells Kürbiskerne";NA;NA;NA;NA;NA;NA;2;NA;12,5;26,8185;19,65925
-"Kurkuma Gemahlen";"Kurkuma Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,278;0,375;0,3265
-"Langkornreis Natur";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
-"Mandelmus";"Mandelmus";"Aufstriche";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;4,664;3,532;4,098
-"Olivenöl";"Olivenöl";"Öl und Essig";"5";"Naturata";"Kreta";1984,74189002833;2;"Zwischenhaendler";142,914375788986;2127,65626581732;2;21,25;32,685;80,504;56,5945
-"Penne semoltano";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
-"Pfeffer Schwarz Ganz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
-"Polenta";"Polenta";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;12,8;13,042;0,603;6,8225
-"Rapsöl";"Rapsöl";"Öl und Essig";"10";"Naturata";"Ungarn";789,35436831825;2;"Zwischenhaendler";142,914375788986;932,268744107236;2;NA;25;NA;25
-"Rohrohrzucker";"Zucker";"Sonstiges";"25";"Naturata";"Deutschland";263,632849398416;2;"Zwischenhaendler";142,914375788986;406,547225187402;6;4,16666666666667;12,5;9,742;11,121
-"Rosinen";"Sultaninen";"Trockenfrüchte";"12.5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;2,143;6,25;12,5585;9,40425
-"Rote Linsen";"Linsen Rot";"Grundnahrungsmittel";"25";"dryfruit";NA;NA;NA;NA;NA;NA;5;5;14,9892;14,776;14,8826
-"Rote Linsen Neu";"Linsen Rot";"Grundnahrungsmittel";"25";"dryfruit";NA;NA;NA;NA;NA;NA;5;5;14,9892;14,776;14,8826
-"Rübenzucker";"Zucker";"Sonstiges";"25";"Naturata";"Deutschland";263,632849398416;2;"Zwischenhaendler";142,914375788986;406,547225187402;6;4,16666666666667;12,5;9,742;11,121
-"Rübenzucker Sack";"Zucker";"Sonstiges";"25";"Naturata";"Deutschland";263,632849398416;2;"Zwischenhaendler";142,914375788986;406,547225187402;6;4,16666666666667;12,5;9,742;11,121
-"Rundkornreis";"Rundkornreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
-"Salz";"Salz";"Gewürze";"25";"Naturata";"Portugal";1745,68119246602;2;"Zwischenhaendler";142,914375788986;1888,59556825501;2;NA;12,5;12,5;12,5
-"Samba";"Samba";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
-"Samba – Schokoaufstrich";"Samba";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
-"Senfkörner";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
-"Senfkörner Ganz";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
-"Senfkörner Neu";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
-"Sesam";"Sesam";"Ölsaaten und Nüsse";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
-"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"Naturata";"Italien";826,114189793074;2;"Zwischenhaendler";142,914375788986;969,02856558206;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"Naturata";"Slovenien";531,814392729045;2;"Zwischenhaendler";142,914375788986;674,728768518031;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"Naturata";"Rumänien";1229,38699728249;2;"Zwischenhaendler";142,914375788986;1372,30137307148;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Italien";826,114189793074;2;"Zwischenhaendler";142,914375788986;969,02856558206;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Slovenien";531,814392729045;2;"Zwischenhaendler";142,914375788986;674,728768518031;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Rumänien";1229,38699728249;2;"Zwischenhaendler";142,914375788986;1372,30137307148;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
-"Spaghetti";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;3,75;16,66;2,8235;9,74175
-"Spaghetti semoltano";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;3,75;16,66;2,8235;9,74175
-"Spirelli";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
-"Tomatenmark";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
-"Tomaten Mark";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
-"Tomatenpassata";"Tomatenpassata";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;6;NA;34;22;28
-"Tomaten Passata";"Tomatenpassata";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;6;NA;34;22;28
-"Weinbeeren";"Sultaninen";"Trockenfrüchte";"12.5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;2,143;6,25;12,5585;9,40425
-"Zimt Ganz";"Zimt Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,6745;0,58725
-"Zimt Gemahlen";"Zimt Gemahlen";"Gewürze";"1";"OBEG";"Indien";6787,92000583096;3;"Zwischenhaendler";212,62569395508;7000,54569978604;2;NA;1,5;0,7525;1,12625
-"Ahornsirup";"Ahornsirup";"Sonstiges";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;2;6,1535;4,07675
-"Best Cashew Feb 2017";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Bier Fur Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Bier Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Bockshornklee";"Bockshornklee Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,25;0,25;0,25
-"Chilli";"Chilli Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,23925;0,35625;0,29775
-"Erdmussmus";"Erdnussmus";"Aufstriche";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;2,33;3,6415;2,98575
-"Falschbuchung Hanfkoerner";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Hirse Gold";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
-"Hirse gold";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
-"Honig Frühjahrsblüte Glas";"Honig";"Sonstiges";"10";"Erik";NA;0;NA;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Honig Schwarzwald Glas";"Honig";"Sonstiges";"10";"Erik";NA;0;NA;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
-"Korrektur Hanfsamen";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Kurkuma";"Kurkuma Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,278;0,375;0,3265
-"Langkornreis";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
-"Linsen Aa";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Muesli";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
-"Nudeln Spaghetti Dinkel";"Spaghetti Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;20;20
-"Nudeln Spirelli GEMISCHT";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
-"Nudeln Spirelli Weizen";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
-"Nudeln, Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;6;NA;NA;7,81266666666667;7,81266666666667
-"Nudeln, Dinkel Vollkorn";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;6;NA;NA;7,81266666666667;7,81266666666667
-"Nudeln, Spirelli Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;NA;"Erzeuger";306,955484551127;306,955484551127;6;NA;NA;7,81266666666667;7,81266666666667
-"Passata";"Tomatenpassata";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;6;NA;34;22;28
-"Pfeffer";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
-"Pfeffer schwarz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
-"Reis Langkorn";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
-"Reis Rundkorn Vollkorn";"Rundkornreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
-"Schokomus Sambe";"Samba";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
-"Sesam ";"Sesam";"Ölsaaten und Nüsse";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
-"Sesam ungeschält";"Sesam";"Ölsaaten und Nüsse";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
-"Sesammus";"Sesammus";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;NA;5;5
-"Sonnenblumenöl -HO";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
-"Sonnenblumenöl Heiss";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
-"Sonnenblumenöl Hocherhitzbar";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
-"Sultaninen";"Sultaninen";"Trockenfrüchte";"12.5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;2,143;6,25;12,5585;9,40425
-"Tomatenmark EDEN";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
-"Tomatenmark NATURATA";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
-"Zuckerrübensirup";"Zuckerrübensirup";"Sonstiges";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;NA;6,088;6,088
-"Sonnenblumenöl, EU ";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
-"Senfsaat Gelb";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
-"Waldhonig";"Honig";"Sonstiges";"10";"Erik";NA;0;NA;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"";"Produkte_App";"Produkte_Zusammenfassung";"Produktgruppe";"Verpackungseinheit";"Lieferant";"Ort";"EntfernungZwischenhaendler";"Herkunftsgenauigkeit";"Lieferantentyp";"EntfernungKK";"Gesamtentfernung";"n";"turnover2015";"turnover2016";"turnover2017";"avg.turnover"
+"1";"Allesreiniger";"Allesreiniger";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;20;NA;20
+"2";"Apfelessig";"Apfelessig";"Öl und Essig";"5";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;20;10;15
+"3";"Arborio Reis";"Rundkornreis";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
+"4";"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"OBEG";"Rumänien";1187,95593171882;3;"Zwischenhaendler";212,62569395508;1400,5816256739;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"5";"Basilikum";"Basilikum";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1;0,103;0,5515
+"6";"Basitom";"Basitom";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
+"7";"Basmati Braun";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
+"8";"Basmati Weiß";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
+"9";"Beluglinsen";"Linsen Beluga";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;12,66;12,371;NA;12,371
+"10";"Blaumohn";"Blaumohn";"Ölsaaten und Nüsse";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4,628;NA;4,628
+"11";"Bockshornklee Ganz";"Bockshornklee Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,25;0,25;0,25
+"12";"Bohnen";"Bohnen schwarz";"Hülsenfrüchte";"25";"Wolfgang Hees";NA;0;1;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;20,274;NA;20,274
+"13";"Bohnen Borlotti";"Bohnen Borlotti";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;5;13,814;NA;13,814
+"14";"Borlottibohnen";"Bohnen Borlotti";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;5;13,814;NA;13,814
+"15";"Braune Linsen";"Linsen Braun";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;8,33333333333333;12,8043333333333;NA;12,8043333333333
+"16";"brauner Basmati";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
+"17";"Braunhirse";"Hirse Braun";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;8,386;8,484;NA;8,484
+"18";"Buchweizen";"Buchweizen";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;12,5;23,74;27,527;25,6335
+"19";"Buchweizenmehl";"Buchweizenmehl";"Grundnahrungsmittel";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;5;NA;5
+"20";"Cashews";"Cashews";"Ölsaaten und Nüsse";"25";"Cashew4You";"Enugu, Nigeria";4570,92944992498;2;"Zwischenhaendler";105,291962397502;4676,22141232248;2;NA;11,034;22,705;16,8695
+"21";"Chilli Gemahlen";"Chilli Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,23925;0,35625;0,29775
+"22";"Couscous";"Couscous";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;25;57,608;25;41,304
+"23";"Currychini";"Currychini";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;6;NA;6
+"24";"Dinkel";"Dinkel";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;1;"Erzeuger";24,8237399290683;24,8237399290683;1;50;149,366;59,902;104,634
+"25";"Dinkel Drink";"Drink Dinkel";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;2;65;49,5;100;74,75
+"26";"Drink Buchweizen";"Drink Buchweizen";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;1;NA;29;100;64,5
+"27";"Drink Dinkel";"Drink Dinkel";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;2;65;49,5;100;74,75
+"28";"Drink Hafer";"Drink Hafer";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;2;65;49;160;104,5
+"29";"Drink Soja";"Drink Soja";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;2;50;50;73;61,5
+"30";"Erdnussmus";"Erdnussmus";"Aufstriche";"10";"Rapunzel";"China";7432,77877553574;3;"Zwischenhaendler";170,424986104297;7603,20376164004;4;NA;2,33;3,6415;2,98575
+"31";"Gemüsebrühe";"Gemüsebrühe";"Sonstiges";"10";"Naturata";"Schweiz";246,45691488885;2;"Zwischenhaendler";142,914375788986;389,371290677836;1;NA;14;7,516;10,758
+"32";"Getrocknete Äpfel";"Getrocknetes Gemüse";"Sonstiges";"10";"Sonnenobst";NA;0;1;"Erzeuger";12,1097163235784;12,1097163235784;3;0,96;15,3406666666667;0,229333333333333;7,785
+"33";"Getrocknete Paprika";"Getrocknetes Gemüse";"Sonstiges";"10";"Sonnenobst";NA;0;1;"Erzeuger";12,1097163235784;12,1097163235784;3;0,96;15,3406666666667;0,229333333333333;7,785
+"34";"Getrocknetes Gemüse";"Getrocknetes Gemüse";"Sonstiges";"10";"Sonnenobst";NA;0;1;"Erzeuger";12,1097163235784;12,1097163235784;3;0,96;15,3406666666667;0,229333333333333;7,785
+"35";"Goldhirse";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
+"36";"Goldhirse Neu";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
+"37";"Grünkern";"Grünkern";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;NA;14,308;21,377;17,8425
+"38";"Hafer";"Hafer";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;1;"Erzeuger";24,8237399290683;24,8237399290683;1;50;51,736;3,89;27,813
+"39";"Hafer Drink";"Drink Hafer";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;2;65;49;160;104,5
+"40";"Haferflocken";"Haferflocken";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;25,57;150,154;151,788;150,971
+"41";"Haselnüsse geschält";"Haselnüsse";"Ölsaaten und Nüsse";"25";"Hofgut Unterbach";NA;0;1;"Erzeuger";99,4243907072954;99,4243907072954;2;NA;10;10;10
+"42";"Hirse Braun";"Hirse Braun";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;8,386;8,484;NA;8,484
+"43";"Honig";"Honig";"Sonstiges";"10";"Erik";NA;0;1;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"44";"Ingwer Gemahlen";"Ingwer Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;1,033;NA;1,033
+"45";"Kaffee Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Honduras";9067,26543847171;2;"Zwischenhaendler";4,27564270544115;9071,54108117715;4;NA;7,428;4,812;6,12
+"46";"Kaffee Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Indien";6941,63377165179;2;"Zwischenhaendler";4,27564270544115;6945,90941435723;4;NA;7,428;4,812;6,12
+"47";"Kaffee Geröstet";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
+"48";"Kaffee roh";"Kaffee roh";"Drinks, Säfte, Kaffee";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;1;2;3,48;NA;3,48
+"49";"Kaffe Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Honduras";9067,26543847171;2;"Zwischenhaendler";4,27564270544115;9071,54108117715;4;NA;7,428;4,812;6,12
+"50";"Kaffe Espresso";"Kaffee Espresso";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Indien";6941,63377165179;2;"Zwischenhaendler";4,27564270544115;6945,90941435723;4;NA;7,428;4,812;6,12
+"51";"Kaffee Zumba";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
+"52";"Kaffe Zumba";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
+"53";"Kardamom Ganz";"Kardamom Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,503;NA;0,503
+"54";"Kichererbsen";"Kichererbsen";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;25;57,2;25;41,1
+"55";"Kokosfett";"Kokosfett";"Sonstiges";"10";"Naturata";"Philippinen";10513,9421875838;2;"Zwischenhaendler";142,914375788986;10656,8565633727;1;NA;19;9,252;14,126
+"56";"Koriander Ganz";"Koriander Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,692;0,596
+"57";"Koriander Gemahlen";"Koriander Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5095;0,89;0,69975
+"58";"Kräuter der Provence";"Kräuter der Provence";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,493;1,064;0,7785
+"59";"Kreuzkümmel Ganz";"Kreuzkümmel Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,5;0,5
+"60";"Kreuzkümmel Gemahlen";"Kreuzkümmel Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,57;0,535
+"61";"Kümmel";"Kümmel";"Gewürze";"5";"OBEG";"Österreich";396,865387621061;3;"Zwischenhaendler";212,62569395508;609,491081576141;2;NA;2,4475;NA;2,4475
+"62";"Kürbiskerne";"Kürbiskerne";"Ölsaaten und Nüsse";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;NA;12,5;26,8185;19,65925
+"63";"Kurkuma Gemahlen";"Kurkuma Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,278;0,375;0,3265
+"64";"Langkornreis Natur";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
+"65";"Leinsamen";"Leinsamen";"Ölsaaten und Nüsse";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;NA;25,106;25;25,053
+"66";"Linsen Beluga";"Linsen Beluga";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;12,66;12,371;NA;12,371
+"67";"Linsen Braun";"Linsen Braun";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;8,33333333333333;12,8043333333333;NA;12,8043333333333
+"68";"Mandelmus";"Mandelmus";"Aufstriche";"10";"Rapunzel";"USA";8079,72012512699;3;"Zwischenhaendler";170,424986104297;8250,14511123128;2;NA;4,664;3,532;4,098
+"69";"Mepfel";"Mepfel";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
+"70";"Olivenöl";"Olivenöl";"Öl und Essig";"5";"OBEG";"Griechenland";1481,14249831131;2;"Zwischenhaendler";212,62569395508;1693,76819226639;2;21,25;32,685;80,504;56,5945
+"71";"Oregano";"Oregano";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;1,207;0,8535
+"72";"Paprika Edelsüß";"Paprika Edelsüß";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,5;0,5
+"73";"Penne semoltano";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
+"74";"Pfeffer Schwarz Ganz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;3;"Zwischenhaendler";6,25755619582711;6744,38061003989;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
+"75";"Polenta";"Polenta";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;12,8;13,042;0,603;6,8225
+"76";"Rapsöl";"Rapsöl";"Öl und Essig";"10";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;25;NA;25
+"77";"Risottoreis";"Risottoreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;13,31;10;11,655
+"78";"Roggen";"Roggen";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;1;"Erzeuger";24,8237399290683;24,8237399290683;1;51,16;50,864;49,174;50,019
+"79";"Rohrohrzucker";"Zucker";"Sonstiges";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;6;4,16666666666667;12,5;9,742;11,121
+"80";"Rosinen";"Sultaninen";"Trockenfrüchte";"12.5";"OBEG";"Iran";4062,97576055501;2;"Zwischenhaendler";212,62569395508;4275,60145451009;6;2,143;6,25;12,5585;9,40425
+"81";"Rosmarin";"Rosmarin";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1;NA;1
+"82";"Rote Beete Meerettich";"Rote Beete Meerettich";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
+"83";"Rote Linsen";"Linsen Rot";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;5;5;14,9892;14,776;14,8826
+"84";"Rote Linsen Neu";"Linsen Rot";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;5;5;14,9892;14,776;14,8826
+"85";"Rübenzucker";"Zucker";"Sonstiges";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;6;4,16666666666667;12,5;9,742;11,121
+"86";"Rübenzucker Sack";"Zucker";"Sonstiges";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;6;4,16666666666667;12,5;9,742;11,121
+"87";"Rundkornreis";"Rundkornreis";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
+"88";"Saft Apfel";"Saft Apfel";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;1;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;102;34;68
+"89";"Saft Apfel-Birne";"Saft Apfel-Birne";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;1;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;23,686;19,21;21,448
+"90";"Saft Apfel-Möhre";"Saft Apfel-Möhre";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;1;"Erzeuger";11,9371259981786;11,9371259981786;1;NA;6;NA;6
+"91";"Saft Trauben";"Saft Trauben";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;1;"Erzeuger";11,9371259981786;11,9371259981786;2;NA;14,843;9,5;12,1715
+"92";"Salz";"Salz";"Gewürze";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;12,5;12,5;12,5
+"93";"Samba";"Samba";"Aufstriche";"8";"Rapunzel";"Türkei";2247,45374723389;3;"Zwischenhaendler";170,424986104297;2417,87873333819;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
+"94";"Samba – Schokoaufstrich";"Samba";"Aufstriche";"8";"Rapunzel";"Türkei";2247,45374723389;3;"Zwischenhaendler";170,424986104297;2417,87873333819;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
+"95";"Schwarzkümmel";"Schwarzkümmel";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1,893;3,094;2,4935
+"96";"Sendi";"Sendi";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;4;NA;4
+"97";"Senf Kirsche";"Senf Kirsche";"Aufstriche";"10";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;4,728;NA;4,728
+"98";"Senfkörner";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
+"99";"Senfkörner Ganz";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
+"100";"Senfkörner Neu";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
+"101";"Senf Mango";"Senf Mango";"Aufstriche";"10";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;2,314;2,141;2,2275
+"102";"Senf Sarepta";"Senf Sarepta";"Aufstriche";"10";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;4,466;5;4,733
+"103";"Sesam";"Sesam";"Ölsaaten und Nüsse";"25";"OBEG";"Äthiopien";5282,76359333491;2;"Zwischenhaendler";212,62569395508;5495,38928728999;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
+"104";"Soja Drink";"Drink Soja";"Drinks, Säfte, Kaffee";"10";"Hofgut Storzeln";NA;0;1;"Erzeuger";69,84997949108;69,84997949108;2;50;50;73;61,5
+"105";"Sonnenblumenkerne";"Sonnenblumenkerne";"Ölsaaten und Nüsse";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;25;76,566;75,829;76,1975
+"106";"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"OBEG";"Rumänien";1187,95593171882;3;"Zwischenhaendler";212,62569395508;1400,5816256739;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"107";"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"OBEG";"Rumänien";1187,95593171882;3;"Zwischenhaendler";212,62569395508;1400,5816256739;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"108";"Sonnenblütenhonig";"Honig";"Sonstiges";"10";"Erik";NA;0;1;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"109";"Spaghetti";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;4;3,75;16,66;2,8235;9,74175
+"110";"Spaghetti semoltano";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;4;3,75;16,66;2,8235;9,74175
+"111";"Spirelli";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
+"112";"Spülmittel";"Spülmittel Hand";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;15;20;17,5
+"113";"Spülmittel Hand";"Spülmittel Hand";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;15;20;17,5
+"114";"Spülmittel Maschine";"Spülmittel Maschine";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;2;NA;5;5,064;5,032
+"115";"Tellerlinsen";"Linsen Braun";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;8,33333333333333;12,8043333333333;NA;12,8043333333333
+"116";"Thymian";"Thymian";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;1,969;0,25;1,1095
+"117";"Tomatenmark";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
+"118";"Tomaten Mark";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
+"119";"Tomatenpassata";"Tomatenpassata";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;6;NA;34;22;28
+"120";"Tomaten Passata";"Tomatenpassata";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;6;NA;34;22;28
+"121";"Walnüsse";"Walnüsse";"Ölsaaten und Nüsse";"25";"Hofgut Unterbach";NA;0;1;"Erzeuger";99,4243907072954;99,4243907072954;1;NA;20;20;20
+"122";"Waschmittel Lavendel";"Waschmittel Lavendel";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;20;57,487;38,7435
+"123";"Waschmittel Normal";"Waschmittel Pulver";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;10;7,32133333333333;8,66066666666667
+"124";"Waschmittel Pulver";"Waschmittel Pulver";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;10;7,32133333333333;8,66066666666667
+"125";"Waschmittel Seide/Wolle";"Waschmittel Seide/Wolle";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;25;NA;25
+"126";"Waschmittel Sensitiv";"Waschmittel Sensitiv";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;1;NA;NA;NA;NA
+"127";"Weinbeeren";"Sultaninen";"Trockenfrüchte";"12.5";"OBEG";"Iran";4062,97576055501;2;"Zwischenhaendler";212,62569395508;4275,60145451009;6;2,143;6,25;12,5585;9,40425
+"128";"weißer Basmati";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
+"129";"Weizen";"Weizen";"Grundnahrungsmittel";"25";"Luzernenhof";NA;0;1;"Erzeuger";24,8237399290683;24,8237399290683;1;50,03;99,68;21,52;60,6
+"130";"Zimt Ganz";"Zimt Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;0,5;0,6745;0,58725
+"131";"Zimt Gemahlen";"Zimt Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;2;NA;1,5;0,7525;1,12625
+"132";"Zwiebelschmelz";"Zwiebelschmelz";"Aufstriche";"6";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;10;NA;10
+"133";"Ahornsirup";"Ahornsirup";"Sonstiges";"5";"Naturata";"Kanada";6927,83120397809;2;"Zwischenhaendler";142,914375788986;7070,74557976708;2;NA;2;6,1535;4,07675
+"134";"Amaranth";"Amaranth";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;1;NA;NA;25;25
+"135";"Best Cashew Feb 2017";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"136";"Bier Fur Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"137";"Bier Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"138";"Bockshornklee";"Bockshornklee Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,25;0,25;0,25
+"139";"Cashew";"Cashews";"Ölsaaten und Nüsse";"25";"Cashew4You";"Enugu, Nigeria";4570,92944992498;2;"Zwischenhaendler";105,291962397502;4676,22141232248;2;NA;11,034;22,705;16,8695
+"140";"Chilli";"Chilli Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,23925;0,35625;0,29775
+"141";"Choco";"Choco Zartbitter Creme";"Aufstriche";"8";"Rapunzel";"Paraguay";10437,2788577706;3;"Zwischenhaendler";170,424986104297;10607,7038438749;2;NA;NA;7,312;7,312
+"142";"Erdmussmus";"Erdnussmus";"Aufstriche";"10";"Rapunzel";"China";7432,77877553574;3;"Zwischenhaendler";170,424986104297;7603,20376164004;4;NA;2,33;3,6415;2,98575
+"143";"Essig Apfel";"Apfelessig";"Öl und Essig";"5";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;NA;20;10;15
+"144";"Falschbuchung Hanfkoerner";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"145";"Feigen";"Feigen";"Trockenfrüchte";"12.5";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;1;NA;NA;NA;NA
+"146";"Geschirrspülmittel";"Spülmittel Hand";"Putzequipment";"20";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;15;20;17,5
+"147";"Gruenkern";"Grünkern";"Grundnahrungsmittel";"25";"OBEG";"Nord Baden-Württemberg";88,0573811302204;2;"Zwischenhaendler";212,62569395508;300,6830750853;2;NA;14,308;21,377;17,8425
+"148";"Hanfkoerner";"Hanfkörner";"Ölsaaten und Nüsse";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;NA;NA;6,18533333333333;6,18533333333333
+"149";"Hanfkörner";"Hanfkörner";"Ölsaaten und Nüsse";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;NA;NA;6,18533333333333;6,18533333333333
+"150";"Hanfkoerner ";"Hanfkörner";"Ölsaaten und Nüsse";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;3;NA;NA;6,18533333333333;6,18533333333333
+"151";"Haselnüsse";"Haselnüsse";"Ölsaaten und Nüsse";"25";"Hofgut Unterbach";NA;0;1;"Erzeuger";99,4243907072954;99,4243907072954;2;NA;10;10;10
+"152";"Hirse Gold";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
+"153";"Hirse gold";"Hirse Gold";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;8;3,54125;9,2375;2,92125;6,079375
+"154";"Honig Frühjahrsblüte Glas";"Honig";"Sonstiges";"10";"Stefan";NA;0;1;"Erzeuger";9,67804967252907;9,67804967252907;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"155";"Honig Schwarzwald Glas";"Honig";"Sonstiges";"10";"Stefan";NA;0;1;"Erzeuger";9,67804967252907;9,67804967252907;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"156";"Honig Sommerblüte Eimer";"Honig";"Sonstiges";"10";"Erik";NA;0;1;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"157";"Kaffee Nepal";"Kaffee Zumba";"Drinks, Säfte, Kaffee";"5";"Elephant Beans";"Ecuador";9863,63627285079;2;"Zwischenhaendler";4,27564270544115;9867,91191555623;4;NA;3,6325;2,6;3,11625
+"158";"Korrektur Hanfsamen";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"159";"Kräuter Der Provence";"Kräuter der Provence";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,493;1,064;0,7785
+"160";"Kurkuma";"Kurkuma Gemahlen";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;4;NA;0,278;0,375;0,3265
+"161";"Langkornreis";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
+"162";"Linsen Aa";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"163";"Linsen Alblinsen";"Linsen Alblinsen";"Hülsenfrüchte";"25";"Albleisa";NA;0;1;"Erzeuger";130,015523134295;130,015523134295;1;NA;NA;25;25
+"164";"Linsen Berglinsen";"Linsen Berglinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,231;29,231
+"165";"Linsen Rot";"Linsen Rot";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;5;5;14,9892;14,776;14,8826
+"166";"Linsen Tellerlinsen";"Linsen Tellerlinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,59;29,59
+"167";"Linsen, Berglinsen";"Linsen Berglinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,231;29,231
+"168";"Linsen, Tellerlinsen";"Linsen Tellerlinsen";"Hülsenfrüchte";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;29,59;29,59
+"169";"Maschinenspülmittel";"Spülmittel Maschine";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;2;NA;5;5,064;5,032
+"170";"Muesli";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"171";"Nudeln Spaghetti Dinkel";"Spaghetti Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;2;NA;NA;20;20
+"172";"Nudeln Spirelli GEMISCHT";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
+"173";"Nudeln Spirelli Weizen";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Naturata";"Piemont Italien";450,322852443221;2;"Zwischenhaendler";142,914375788986;593,237228232207;8;1,875;15,438125;10,0325;12,7353125
+"174";"Nudeln, Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;6;NA;NA;7,81266666666667;7,81266666666667
+"175";"Nudeln, Dinkel Vollkorn";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;6;NA;NA;7,81266666666667;7,81266666666667
+"176";"Nudeln, Spirelli Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"St. Georgener Bauer";NA;NA;NA;NA;NA;NA;6;NA;NA;7,81266666666667;7,81266666666667
+"177";"Oreganum";"Oregano";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;1,207;0,8535
+"178";"Paprikapulver Edelsüss";"Paprika Edelsüß";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,5;0,5
+"179";"Passata";"Tomatenpassata";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;6;NA;34;22;28
+"180";"Pfeffer";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;3;"Zwischenhaendler";6,25755619582711;6744,38061003989;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
+"181";"Pfeffer schwarz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;3;"Zwischenhaendler";6,25755619582711;6744,38061003989;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
+"182";"Reis Bastmati";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
+"183";"Reis Langkorn";"Langkornreis Natur";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;10;2,5;9,887;9,0202;9,4536
+"184";"Reis Rundkorn Vollkorn";"Rundkornreis";"Grundnahrungsmittel";"25";"OBEG";"Italien";855,694055034801;2;"Zwischenhaendler";212,62569395508;1068,31974898988;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
+"185";"Saft Traube";"Saft Trauben";"Drinks, Säfte, Kaffee";"6";"Wolfgang Hees";NA;0;1;"Erzeuger";11,9371259981786;11,9371259981786;2;NA;14,843;9,5;12,1715
+"186";"Schokolade Haselnuss";"Schokolade Haselnuss";"Sonstiges";"10";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;3;NA;NA;16,6666666666667;16,6666666666667
+"187";"Schokolade Vollmilch";"Schokolade Haselnuss";"Sonstiges";"10";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;3;NA;NA;16,6666666666667;16,6666666666667
+"188";"Schokolade Nuss";"Schokolade Haselnuss";"Sonstiges";"10";"OBEG";"Türkei";2313,25162679565;3;"Zwischenhaendler";212,62569395508;2525,87732075073;3;NA;NA;16,6666666666667;16,6666666666667
+"189";"Schokolade Zartbitter";"Schokolade Zartbitter";"Sonstiges";"10";"OBEG";"Domenikanische Republik";7741,45707780716;3;"Zwischenhaendler";212,62569395508;7954,08277176224;1;NA;NA;50,886;50,886
+"190";"Schokomus Sambe";"Samba";"Aufstriche";"8";"Rapunzel";"Türkei";2247,45374723389;3;"Zwischenhaendler";170,424986104297;2417,87873333819;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
+"191";"Schokomus Zartbitter";"Choco Zartbitter Creme";"Aufstriche";"8";"Rapunzel";"Paraguay";10437,2788577706;3;"Zwischenhaendler";170,424986104297;10607,7038438749;2;NA;NA;7,312;7,312
+"192";"Senf Kürbis Ingwer";"Senf Kürbis Ingwer";"Aufstriche";"5";"Hakuma Food";NA;0;NA;"Produzent";4,38459280711293;4,38459280711293;1;NA;NA;4,902;4,902
+"193";"Sesam ";"Sesam";"Ölsaaten und Nüsse";"25";"OBEG";"Äthiopien";5282,76359333491;2;"Zwischenhaendler";212,62569395508;5495,38928728999;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
+"194";"Sesam ungeschält";"Sesam";"Ölsaaten und Nüsse";"25";"OBEG";"Äthiopien";5282,76359333491;2;"Zwischenhaendler";212,62569395508;5495,38928728999;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
+"195";"Sesammus";"Sesammus";"Aufstriche";"8";"Rapunzel";"Ägypten";2947,69313275129;3;"Zwischenhaendler";170,424986104297;3118,11811885559;2;NA;NA;5;5
+"196";"Sonnenblumenöl -HO";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
+"197";"Sonnenblumenöl Nativ";"Sonnenblumenöl kaltgepresst";"Öl und Essig";"5";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;1;NA;NA;44,58;44,58
+"198";"Sonnenblumenöl Heiss";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
+"199";"Sonnenblumenöl Hocherhitzbar";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
+"200";"Sultaninen";"Sultaninen";"Trockenfrüchte";"12.5";"OBEG";"Iran";4062,97576055501;2;"Zwischenhaendler";212,62569395508;4275,60145451009;6;2,143;6,25;12,5585;9,40425
+"201";"Tomaten Im Glas";"Tomaten Ganze Stücke";"Sonstiges";"10";"Querbeet";NA;0;1;"Erzeuger";12,1844972061387;12,1844972061387;2;NA;NA;56,5;56,5
+"202";"Tomaten im Glas";"Tomaten Ganze Stücke";"Sonstiges";"10";"Querbeet";NA;0;1;"Erzeuger";12,1844972061387;12,1844972061387;2;NA;NA;56,5;56,5
+"203";"Tomatenmark EDEN";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
+"204";"Tomatenmark NATURATA";"Tomatenmark";"Sonstiges";"12";"Naturata";"San Giorgio Piacentino, Italien";445,970517784924;1;"Zwischenhaendler";142,914375788986;588,88489357391;8;NA;17,625;16,5;17,0625
+"205";"Vollrohrohrzucker";"Rohrohrzucker";"Sonstiges";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;1;NA;NA;NA;NA
+"206";"Waschpulver";"Waschmittel Pulver";"Putzequipment";"10";"Sonett";NA;0;NA;"Produzent";115,894966853525;115,894966853525;3;NA;10;7,32133333333333;8,66066666666667
+"207";"Zuckerrübensirup";"Zuckerrübensirup";"Sonstiges";"5";"Naturata";"Uelzen, Deutschland";458,674439555324;1;"Zwischenhaendler";142,914375788986;601,58881534431;2;NA;NA;6,088;6,088
+"208";"Essig Weisswein";"Weißweinessig";"Öl und Essig";"5";"Kaiserstühler Hof";NA;NA;NA;NA;NA;NA;1;NA;NA;20;20
+"209";"Essig Rotwein";"Rotweinessig";"Öl und Essig";"5";"Kaiserstühler Hof";NA;NA;NA;NA;NA;NA;1;NA;NA;20;20
+"210";"Sonnenblumenöl, EU ";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"OBEG";"Nord Baden-Württemberg";88,0573811302204;3;"Zwischenhaendler";212,62569395508;300,6830750853;8;2,5;NA;9,106;9,106
+"211";"Reis Basmati";"Basmati Weiß";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;6,25;11,982;25;18,491
+"212";"Reis Risotto Weiß";"Risottoreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;13,31;10;11,655
+"213";"Senfsaat Gelb";"Senfkörner";"Gewürze";"1";"Sahana-Eliya e.V";"Nepal";6738,12305384406;2;"Zwischenhaendler";6,25755619582711;6744,38061003989;8;NA;0,251625;0,267;0,2593125
+"214";"Waldhonig";"Honig";"Sonstiges";"10";"Stefan";NA;0;1;"Erzeuger";9,67804967252907;9,67804967252907;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"215";"Arborio Reis";"Rundkornreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
+"216";"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Italien";826,114189793074;2;"Zwischenhaendler";142,914375788986;969,02856558206;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"217";"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Slovenien";531,814392729045;2;"Zwischenhaendler";142,914375788986;674,728768518031;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"218";"Back-/Bratöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Rumänien";1229,38699728249;2;"Zwischenhaendler";142,914375788986;1372,30137307148;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"219";"Basmati Braun";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
+"220";"Bockshornklee Ganz";"Bockshornklee Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,25;0,25;0,25
+"221";"brauner Basmati";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
+"222";"Buchweizen";"Buchweizen";"Grundnahrungsmittel";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;2;12,5;23,74;27,527;25,6335
+"223";"Chilli Gemahlen";"Chilli Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,23925;0,35625;0,29775
+"224";"Erdnussmus";"Erdnussmus";"Aufstriche";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;2,33;3,6415;2,98575
+"225";"Goldhirse";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
+"226";"Goldhirse Neu";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
+"227";"Hirse Braun";"Hirse Braun";"Grundnahrungsmittel";"25";"OBEG";"Deutschland";205,22785085992;2;"Zwischenhaendler";212,62569395508;417,853544815;3;8,386;8,484;NA;8,484
+"228";"Ingwer Gemahlen";"Ingwer Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;1,033;NA;1,033
+"229";"Kardamom Ganz";"Kardamom Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,503;NA;0,503
+"230";"Koriander Ganz";"Koriander Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,692;0,596
+"231";"Koriander Gemahlen";"Koriander Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5095;0,89;0,69975
+"232";"Kreuzkümmel Ganz";"Kreuzkümmel Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,5;0,5
+"233";"Kreuzkümmel Gemahlen";"Kreuzkümmel Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,57;0,535
+"234";"Kümmel";"Kümmel";"Gewürze";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;2,4475;NA;2,4475
+"235";"Kürbiskerne";"Kürbiskerne";"Ölsaaten und Nüsse";"25";"Schnells Kürbiskerne";NA;NA;NA;NA;NA;NA;2;NA;12,5;26,8185;19,65925
+"236";"Kurkuma Gemahlen";"Kurkuma Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,278;0,375;0,3265
+"237";"Langkornreis Natur";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
+"238";"Mandelmus";"Mandelmus";"Aufstriche";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;4,664;3,532;4,098
+"239";"Olivenöl";"Olivenöl";"Öl und Essig";"5";"Naturata";"Kreta";1984,74189002833;2;"Zwischenhaendler";142,914375788986;2127,65626581732;2;21,25;32,685;80,504;56,5945
+"240";"Penne semoltano";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
+"241";"Pfeffer Schwarz Ganz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
+"242";"Polenta";"Polenta";"Grundnahrungsmittel";"25";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;12,8;13,042;0,603;6,8225
+"243";"Rapsöl";"Rapsöl";"Öl und Essig";"10";"Naturata";"Ungarn";789,35436831825;2;"Zwischenhaendler";142,914375788986;932,268744107236;2;NA;25;NA;25
+"244";"Rohrohrzucker";"Zucker";"Sonstiges";"25";"Naturata";"Deutschland";263,632849398416;2;"Zwischenhaendler";142,914375788986;406,547225187402;6;4,16666666666667;12,5;9,742;11,121
+"245";"Rosinen";"Sultaninen";"Trockenfrüchte";"12.5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;2,143;6,25;12,5585;9,40425
+"246";"Rote Linsen";"Linsen Rot";"Grundnahrungsmittel";"25";"dryfruit";NA;NA;NA;NA;NA;NA;5;5;14,9892;14,776;14,8826
+"247";"Rote Linsen Neu";"Linsen Rot";"Grundnahrungsmittel";"25";"dryfruit";NA;NA;NA;NA;NA;NA;5;5;14,9892;14,776;14,8826
+"248";"Rübenzucker";"Zucker";"Sonstiges";"25";"Naturata";"Deutschland";263,632849398416;2;"Zwischenhaendler";142,914375788986;406,547225187402;6;4,16666666666667;12,5;9,742;11,121
+"249";"Rübenzucker Sack";"Zucker";"Sonstiges";"25";"Naturata";"Deutschland";263,632849398416;2;"Zwischenhaendler";142,914375788986;406,547225187402;6;4,16666666666667;12,5;9,742;11,121
+"250";"Rundkornreis";"Rundkornreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
+"251";"Salz";"Salz";"Gewürze";"25";"Naturata";"Portugal";1745,68119246602;2;"Zwischenhaendler";142,914375788986;1888,59556825501;2;NA;12,5;12,5;12,5
+"252";"Samba";"Samba";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
+"253";"Samba – Schokoaufstrich";"Samba";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
+"254";"Senfkörner";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
+"255";"Senfkörner Ganz";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
+"256";"Senfkörner Neu";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
+"257";"Sesam";"Sesam";"Ölsaaten und Nüsse";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
+"258";"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"Naturata";"Italien";826,114189793074;2;"Zwischenhaendler";142,914375788986;969,02856558206;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"259";"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"Naturata";"Slovenien";531,814392729045;2;"Zwischenhaendler";142,914375788986;674,728768518031;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"260";"Sonnenblumenöl";"Bratöl";"Öl und Essig";"10";"Naturata";"Rumänien";1229,38699728249;2;"Zwischenhaendler";142,914375788986;1372,30137307148;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"261";"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Italien";826,114189793074;2;"Zwischenhaendler";142,914375788986;969,02856558206;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"262";"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Slovenien";531,814392729045;2;"Zwischenhaendler";142,914375788986;674,728768518031;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"263";"Sonnenblumenöl, EU";"Bratöl";"Öl und Essig";"10";"Naturata";"Rumänien";1229,38699728249;2;"Zwischenhaendler";142,914375788986;1372,30137307148;12;1,66666666666667;5,15883333333333;0,0176666666666667;2,58825
+"264";"Spaghetti";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;3,75;16,66;2,8235;9,74175
+"265";"Spaghetti semoltano";"Spaghetti vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;3,75;16,66;2,8235;9,74175
+"266";"Spirelli";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
+"267";"Tomatenmark";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
+"268";"Tomaten Mark";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
+"269";"Tomatenpassata";"Tomatenpassata";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;6;NA;34;22;28
+"270";"Tomaten Passata";"Tomatenpassata";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;6;NA;34;22;28
+"271";"Weinbeeren";"Sultaninen";"Trockenfrüchte";"12.5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;2,143;6,25;12,5585;9,40425
+"272";"Zimt Ganz";"Zimt Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;0,5;0,6745;0,58725
+"273";"Zimt Gemahlen";"Zimt Gemahlen";"Gewürze";"1";"OBEG";"Indien";6787,92000583096;3;"Zwischenhaendler";212,62569395508;7000,54569978604;2;NA;1,5;0,7525;1,12625
+"274";"Ahornsirup";"Ahornsirup";"Sonstiges";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;2;6,1535;4,07675
+"275";"Best Cashew Feb 2017";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"276";"Bier Fur Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"277";"Bier Simon";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"278";"Bockshornklee";"Bockshornklee Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,25;0,25;0,25
+"279";"Chilli";"Chilli Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,23925;0,35625;0,29775
+"280";"Erdmussmus";"Erdnussmus";"Aufstriche";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;2,33;3,6415;2,98575
+"281";"Falschbuchung Hanfkoerner";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"282";"Hirse Gold";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
+"283";"Hirse gold";"Hirse Gold";"Grundnahrungsmittel";"25";"OBEG";"Ukraine";1555,40832745554;2;"Zwischenhaendler";212,62569395508;1768,03402141062;8;3,54125;9,2375;2,92125;6,079375
+"284";"Honig Frühjahrsblüte Glas";"Honig";"Sonstiges";"10";"Erik";NA;0;1;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"285";"Honig Schwarzwald Glas";"Honig";"Sonstiges";"10";"Erik";NA;0;1;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
+"286";"Korrektur Hanfsamen";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"287";"Kurkuma";"Kurkuma Gemahlen";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;4;NA;0,278;0,375;0,3265
+"288";"Langkornreis";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
+"289";"Linsen Aa";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"290";"Muesli";"NI";"NI";"0";"NI";NA;NA;NA;NA;NA;NA;14;NA;NA;1,69085714285714;1,69085714285714
+"291";"Nudeln Spaghetti Dinkel";"Spaghetti Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;2;NA;NA;20;20
+"292";"Nudeln Spirelli GEMISCHT";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
+"293";"Nudeln Spirelli Weizen";"Nudeln vom Grosshandel";"Grundnahrungsmittel";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;1,875;15,438125;10,0325;12,7353125
+"294";"Nudeln, Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;6;NA;NA;7,81266666666667;7,81266666666667
+"295";"Nudeln, Dinkel Vollkorn";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;6;NA;NA;7,81266666666667;7,81266666666667
+"296";"Nudeln, Spirelli Dinkel";"Nudeln Dinkel";"Grundnahrungsmittel";"5";"Biohof Lex";NA;0;1;"Erzeuger";306,955484551127;306,955484551127;6;NA;NA;7,81266666666667;7,81266666666667
+"297";"Passata";"Tomatenpassata";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;6;NA;34;22;28
+"298";"Pfeffer";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
+"299";"Pfeffer schwarz";"Pfeffer Schwarz Ganz";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;0,333333333333333;0,333333333333333;0,484;0,408666666666667
+"300";"Reis Langkorn";"Langkornreis Natur";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;10;2,5;9,887;9,0202;9,4536
+"301";"Reis Rundkorn Vollkorn";"Rundkornreis";"Grundnahrungsmittel";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,16666666666667;4,6185;13,9746666666667;9,29658333333333
+"302";"Schokomus Sambe";"Samba";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;1,33333333333333;6,5225;2,66666666666667;4,59458333333333
+"303";"Sesam ";"Sesam";"Ölsaaten und Nüsse";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
+"304";"Sesam ungeschält";"Sesam";"Ölsaaten und Nüsse";"25";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;4,21666666666667;4,3985;9,16666666666667;6,78258333333333
+"305";"Sesammus";"Sesammus";"Aufstriche";"8";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;NA;5;5
+"306";"Sonnenblumenöl -HO";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
+"307";"Sonnenblumenöl Heiss";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
+"308";"Sonnenblumenöl Hocherhitzbar";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
+"309";"Sultaninen";"Sultaninen";"Trockenfrüchte";"12.5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;6;2,143;6,25;12,5585;9,40425
+"310";"Tomatenmark EDEN";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
+"311";"Tomatenmark NATURATA";"Tomatenmark";"Sonstiges";"12";"OBEG";"Italien";855,694055034801;3;"Zwischenhaendler";212,62569395508;1068,31974898988;8;NA;17,625;16,5;17,0625
+"312";"Zuckerrübensirup";"Zuckerrübensirup";"Sonstiges";"5";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;2;NA;NA;6,088;6,088
+"313";"Sonnenblumenöl, EU ";"Sonnenblumenöl hocherhitzbar";"Öl und Essig";"10";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;2,5;NA;9,106;9,106
+"314";"Senfsaat Gelb";"Senfkörner";"Gewürze";"1";"Bode";"";NA;NA;"Zwischenhaendler";632,709044085065;NA;8;NA;0,251625;0,267;0,2593125
+"315";"Waldhonig";"Honig";"Sonstiges";"10";"Erik";NA;0;1;"Erzeuger";3,56355402577734;3,56355402577734;9;3,11111111111111;1,55555555555556;2,76133333333333;2,15844444444444
