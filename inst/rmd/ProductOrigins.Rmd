@@ -76,6 +76,8 @@ shiny-app !
 
 
 # Results
+
+
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 producersInfoStraight <- readOGR("../../data/producersInfoStraight/", "producersInfoStraight")
 producersInfo <- readOGR("../../data/producersInfo/", "producersInfo")
@@ -84,6 +86,26 @@ producersExist <- readOGR("../../data/producersExist/", "producersExist")
 Kornkammer <- readOGR("../../data/Kornkammer/", "Kornkammer")
 
 ```
+
+
+The foodcoop gets 118 products from 21 different suppliers. 12 of the suppliers (57%) were classified as farmers, 2 (10%) as manufacturers and 7 (33 %) as whole salers.
+
+The accuracy of information available on the origin of the products varied with the transportation distance of the products to the foodcoop (see Fig. \ref{fig:accuracy}). All products where the origin was exactly known were located within a 600 km radius around the foodcoop. The farer distances a product was transported, the more difficult it became to find out it's origin. Interestingly, the turnover per year was decreasing with the transportation distance to the foodcoop. For example the 5 products with the highest average turnover per year (oats, spelt, oat drink, sunflower seeds and spelt drink) were transportet maximum 300 km to the foodcoop whereas the products with the lowest turnover per year were spices from Nepal with transportation distances of almost 7000 km.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Plot of the average turnover of every product against the total distance the product has been transported from its origin to the FoodCoop. The accuracy of the origin is described with 3 levels: 1 = origin exactly known (with adress), 2 = region or country of product origin known, 3 = information about origin not available, therefore only a guess of origin. For some products not even a guess was possible. These are not displayed in the plot.\\label{fig:accuracy}"}
+totalDistances <- read.csv2("../../data/totalDistances.csv")
+totalDistances$Herkunftsgenauigkeit[which(totalDistances$Lieferantentyp=="Erzeuger")] <- 1
+totalDistances$Herkunftsgenauigkeit <- as.factor(totalDistances$Herkunftsgenauigkeit)
+ggplot(totalDistances, aes(Gesamtentfernung, avg.turnover, color = Herkunftsgenauigkeit)) + 
+  geom_point() +
+  xlab("total Distance [km]") + ylab("average turnover per year [kg]") +
+  guides(color=guide_legend(title="Accuracy of origin"))
+
+```
+
+The analysis of transportation distances of products consumed by the foodcoop summarized to distance classes and product groups showed a similar picture: most of the products conusmed by the foodcoop were transported bewteen 100 and 200 km. The product groups within this distance class were staple food and drinks/juice. The class with the highest transportation distances (6400-12800 km) comprises koffee, spices and bread spread like peanut butter or chocolate spread (see Fig. XY).
+
+For 53 out of 118 products not even a guess of the origin was possible and the share of products where no transportation distance could be calculated is the third largest ...
 
 
 For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure ... : 
@@ -118,20 +140,11 @@ leaflet(producersExist) %>%
 
 For those products, that didn't grow at its last transfer point, the distance from its last transfer poit to its origin can be calculated, in the case that its origin is known.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The average turnover of kg per year of every product and the total Distance the product has been transported from its origin to the FoodCoop"}
-totalDistances <- read.csv2("../../data/totalDistances.csv")
-totalDistances$Herkunftsgenauigkeit[which(totalDistances$Lieferantentyp=="Erzeuger")] <- 1
-totalDistances$Herkunftsgenauigkeit <- as.factor(totalDistances$Herkunftsgenauigkeit)
-ggplot(totalDistances, aes(Gesamtentfernung, avg.turnover, color = Herkunftsgenauigkeit)) + 
-  geom_point() +
-  xlab("total Distance [km]") + ylab("average turnover per year [kg]") +
-  guides(color=guide_legend(title="Accuracy of origin"))
 
-```
 
 - statistics of distances
 - statistics of quantities
-```{r}
+```{r eval=FALSE, include=FALSE}
 newtotalDistances <- createDistanceCategory(totalDistances)
 
 positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200", "3200-6400", "6400-12800", "NA")
