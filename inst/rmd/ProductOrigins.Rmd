@@ -1,7 +1,7 @@
 ---
-title: "The origin of FoodCoop products"
-author: "Nele, Anna and Miri"
-date: "2 März 2018"
+title: "The products of the FoodCoop \"Kornkammer\", their origin and transport routes"
+author: "Anna Dermann, Mirjam Meischner and Nele Stackelberg"
+date: "9th of March, 2018"
 output:
   pdf_document: default
   fig_caption: true
@@ -26,9 +26,6 @@ library("geosphere")
 ```
 
 # Introduction
-
-- title: Transport routes of the products of a FoodCoop?
-
 The consumption of food has been identified as one of the most energy demanding activities within a household [@vringer1995]. Historically, patterns of food consumption have changed from locally produced food to a diet where the use of fruits, vegetables or spices from far away regions became common [@carlsson1998]. Also the number of stakeholders involved in food production decreased. The majority of food consumed today passes through a complex, indirect network of a few large, centralized producers, processors, transporters and distributors [@hill2008].
 
 The “buylocal” food movement tries to reverse this trend and argues that locally produced food is not only fresher, richer in vitamins and better tasting, but also better for the environment due to shorter distances of transportation and less energy usage during production and transport [@grebitus2013]. The shorter distances food travels, the less fossil fuels are required for transport and the fewer greenhouse gases are emitted [@hill2008].Another advantage of locally produced food is the improvement of the economic situation of (especially small scale) farmers as they are able to reap a greater profit by the removement of brokers from the distribution chain [@hill2008]. However, several studies have questioned the economic benefits of local foods by stating that buying locally unaware of economic laws and principles is promoting a future characterized by less food security [e.g. @desrochers2012]. Other authors identified some shortcomings that emerge from relying solely on economic logic - for example the focus on efficiency (making the pie bigger) rather than distribution (dividing up the pie fairly) [@scharber2016]. All in all the idea of buying food directly from farmers and thereby shortening the transportation distance seems convincing. Therefore, the popularity of forming consumer cooperatives (so called foodcoops) has grown rapidly since the 1970s [@marion1975]. 
