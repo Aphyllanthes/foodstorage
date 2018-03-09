@@ -14,8 +14,8 @@ library(ggplot2)
 library(RSQLite)
 #library(readr)
 library(data.table)
-library(sf)
-library(rgdal)
+#library(sf)
+#library(rgdal)
 library(dplyr)
 library(raster)
 library(tidyr)
@@ -46,7 +46,7 @@ Data acquisition, data processing and data visualisation was performed by Mirjam
 
 The foodcoop "Kornkammer" uses a tablet with an app to manage the inventory of products, to enter deliveries and to process the purchases of the members. The app stores all bookings related to these tasks in an SQLite database. 
 
-We used the database to extract information on the products available in the foodcoop, as their suppliers and their turnovers. For the SQL queries and all other computing we used the R software version 3.4.3 [@RCoreTeam]. The SQL queries were done with the R package "RSQLite". Next, we extended the information stored in the database with the adresses of the suppliers. 
+We used the database to extract information on the products available in the foodcoop as their suppliers and their turnovers (average of the years 2016 and 2017). For the SQL queries and all other computing we used the R software version 3.4.3 [@RCoreTeam]. The SQL queries were done with the R package "RSQLite". Next, we extended the information stored in the database with the adresses of the suppliers. 
 
 We decided to devide the suppliers into three categories: 
 
@@ -58,9 +58,9 @@ Following, we tried to find out the origin of the products sold by the whole sal
 
 - 1 = origin exactly known (with adress)
 - 2 = region or country of product origin known
-- 3 = information about origin not available, therefore only a guess of origin
+- 3 = information about origin not exactly available, but a guess of origin possible. This category was also used for products that consist of several ingredients. Then the origin of the ingredient with the highest share was marked down.
 
-Products of farmers are categorised with the category 1.
+Aditionally, all products of farmers were categorised with the category 1.
 
 ## data processing
 In a next step we used the function "geocode" from the package "ggmap" to convert the adresses of our suppliers and the information about the origin of the products from whole salers into coordinates. In the cases, that only the information about the country of a product's origin was available, the resulting geoposition calculated by the geocode function was located in the middle of the country.
@@ -78,13 +78,16 @@ To geovisualise the data, the generated Shapefiles are used.
 The Shapefile that includes the transport Routes of all products is visualised using the package leaflet, a tool to create interactive maps.
 
 Three different display options were used to visualise the transport Routes between two locations:
+
  - tha actual driving distance
  - the shortes distance on the sheroid (great-circle or orthodromic distance)
  - a straight line on the map
+ 
+The visualization of the transportation distances of the products consumed by the FoodCoop was implemented by a web app (shiny app). Within the app it is possible to select different tabs displaying basically the same visualisations as mentioned above. The main difference is that it is possible to select single products or product groups for the visualisation and that it is possible to zoom in and out the maps.
 
 # Results
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 # producersInfoStraight <- readOGR("../../data/producersInfoStraight/", "producersInfoStraight")
 # producersInfo <- readOGR("../../data/producersInfo/", "producersInfo")
 producersRoutes <- readOGR("../../data/producersRoutes/", "producersRoutes")
@@ -115,14 +118,7 @@ ggplot(totalDistances, aes(Gesamtentfernung, avg.turnover, color = Herkunftsgena
 
 ```
 
-The analysis of transportation distances of products consumed by the foodcoop summarized to distance classes and product groups showed a similar picture: most of the products conusmed by the foodcoop were transported bewteen 100 and 200 km. The product groups within this distance class were staple food and drinks/juice. The class with the highest transportation distances (6400-12800 km) comprises koffee, spices and bread spread like peanut butter or chocolate spread (see Fig. XY).
-
-For 53 out of 118 products not even a guess of the origin was possible and the share of products where no transportation distance could be calculated is the third largest ...
-
-
-
-
-shows the actual driving directions for all products from its last transfer point. 
+The analysis of turnovers of products summarized to distance classes and product groups showed a similar picture (see Fig. \ref{fig:barplot}). Most of the products conusmed by the foodcoop were transported bewteen 100 and 200 km. The product groups within this distance class were staple food and drinks/juice. The class with the highest transportation distances (6400-12800 km) comprises koffee, spices and bread spread like peanut butter or chocolate spread. For 53 out of 118 products (44.9 %) not even a guess of the origin was possible. Therefore, the share of product turnovers where no transportation distance could be calculated represents the third largest "distance class". It comprises high turnovers of staple food like rice, lentils and chickpeas. 
 
 
 ```{r createDistanceCateogriyFunction, message=FALSE, warning=FALSE, include=FALSE}
@@ -144,10 +140,8 @@ createDistanceCategory <- function(totalDistances) {
 }
 ```
 
-For those products, that didn't grow at its last transfer point, the distance from its last transfer poit to its origin can be calculated, in the case that its origin is known.
 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The distance the products had been transported from its origin to the FoodCoop, colored by the product groups. The products were grouped into intervals of the distance. The size of the intervals increases quadraticaly with increasing distance."}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The distance the products had been transported from its origin to the FoodCoop, colored by the product groups. The products were grouped into intervals of the distance. The size of the intervals increases quadraticaly with increasing distance.\\label{fig:barplot}"}
 newtotalDistances <- createDistanceCategory(totalDistances)
 
 positions <- c("0-100", "100-200", "200-400", "400-800", "800-1600", "1600-3200", "3200-6400", "6400-12800", "NA")
@@ -164,10 +158,10 @@ ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgru
 ```
 
 
-For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure \ref{fig1} : 
+The actual driving routes of the products from the suppliers to the foodcoop differed from the flight distances used for the calculation of the transportation distances mentioned above (see Fig.\ref{fig1}).
 
 
-```{r map1, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
+```{r map1, echo=FALSE, eval=FALSE, inclue=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
 pal <- colorFactor(c("darkgreen", "blue", "red"), domain = c(  "Erzeuger", "Produzent", "Zwischenhaendler"))
 KKIcon <- iconList(
   Kornkammer = makeIcon("../../data/icon-2.png", "../../data/icon-2.png", 18, 18)
@@ -192,9 +186,9 @@ leaflet(producersExist) %>%
 
 ```
 
-shows the actual driving directions for all products from its last transfer point. 
+The visualization of the transport distances (flight distances) of the products and their turnover per year showed that most of the products consumed by the FoodCoop were obtained within distances of 400 km. However, the FoodCoop gets products from many parts of the world, including, North- and South-America, Africa and Asia (see Fig. \ref{fig:app}).
 
-```{r generateGeoData, message=FALSE, warning=FALSE, include=FALSE, error=TRUE}
+```{r generateGeoData, eval=FALSE, error=FALSE, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
 ############
 con <- dbConnect(SQLite(), "../../data/kornInfo.sqlite")
 
@@ -274,7 +268,8 @@ dbDisconnect(con)
 ```
 
 
-```{r, echo=FALSE, error=TRUE, message=FALSE, warning=FALSE}
+
+```{r, echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.cap="A map showing the flight distances the products of the FoodCoop had been transported from their origin to the FoodCoop colored by the turnover per year. Dashed lines represent an uncertain accuracy of origin. \\label{fig:app}"}
 
 ##########
 createCurves <- function(i, tD = totalDistances, pEx = producersExist, pOE = productOriginExist){
@@ -326,6 +321,7 @@ leaflet(producersInfo) %>%
             labFormat = labelFormat(suffix = " kg/yr"))
 
 ```
+
 
 # Discussion
 
