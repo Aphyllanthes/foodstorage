@@ -17,7 +17,7 @@ library("geosphere")
 ####
 
 ######## generateGeoData ##############
-con <- dbConnect(SQLite(), "../data/kornInfo.sqlite")
+con <- dbConnect(SQLite(), "kornInfo.sqlite")
 
 productInfo <- dbGetQuery(con, "SELECT * FROM productInfo")
 producerAdress <- dbGetQuery(con, "Select * from producerAdress")
@@ -27,11 +27,56 @@ Kornkammer <- dbGetQuery(con, "SELECT * from AdresseKornkammer")
 
 productOrigin <- origin
 
+kornumsatz_perYear <- function(kornumsatz, productInfo){
+  kornumsatz_new <- kornumsatz %>% 
+    left_join(productInfo[, c("Produkte_App", "Produkte_Zusammenfassung")], by=c("Produkt" = "Produkte_App")) %>% 
+    mutate(Tag = as.Date(Tag, format = "%d/%m/%Y")) %>% 
+    filter(Menge > 0) %>% 
+    mutate(Jahr = year(Tag)) %>% 
+    group_by(Produkte_Zusammenfassung, Jahr) %>% 
+    summarise(Umsatz = sum(Menge))
+  return(kornumsatz_new)
+}
+
 KUperYear <- kornumsatz_perYear(kornumsatz = kornumsatz, productInfo = productInfo)
 KU <- KUperYear %>% 
   spread(Jahr, Umsatz) %>% 
   mutate(avg = mean(c(`2016`, `2017`), na.rm = T))
 names(KU) <- c("Produkte_Zusammenfassung", "turnover2015", "turnover2016", "turnover2017", "avg.turnover")
+
+SupplierDistance <- function(originTable, producersTable){
+  origin <- originTable
+  producers <- producersTable
+  # delete all suppliers where coordintes are missing:
+  originExist <- origin[-which(is.na(origin$xCoord)),]
+  
+  # the coordinates in the order of the existing origins
+  producerCoords <- left_join(originExist[, c("Lieferant", "Produkte_Zusammenfassung")], producers[, c("Lieferant", "xCoord", "yCoord")])
+  
+  # convert originExist and producerCoords to spatialpointsdataframe
+  coordinates(originExist) <- ~xCoord + yCoord
+  coordinates(producerCoords) <- ~xCoord + yCoord
+  
+  #specify crs of coordinates (from googlemaps):
+  crs(producerCoords) <-  "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
+  crs(originExist) <- "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"
+  
+  # calculate distances from the origin to the supplier for each product
+  originExist$EntfernungZwischenhaendler <- spDists(coordinates(originExist), coordinates(producerCoords), longlat=T, diagonal = T)
+  
+  # write distances to datatable
+  Distances2 <- data.table(Lieferant = originExist$Lieferant, Ort = originExist$Ort,
+                           Produkte_Zusammenfassung = originExist$Produkte_Zusammenfassung,
+                           EntfernungZwischenhaendler = originExist$EntfernungZwischenhaendler)
+  
+  # join datatable with distances to the datatable with the origins of the products:
+  origin2 <- as.data.table(left_join(origin, Distances2, by = c("Lieferant", "Produkte_Zusammenfassung", "Ort")))
+  
+  # ? write Distance to KK into the database table producerAdress
+  ## dbWriteTable(con, "producerAdress", producers)
+  return(origin2)
+}
+
 
 originWithDistances <- SupplierDistance(origin, producerAdress)
 
@@ -151,6 +196,23 @@ producersInfo <- SpatialLinesDataFrame(producersL, totalDistances)
 # producersInfo$Produkte_Zusammenfassung <- as.character(producersInfo$Produkte_Zusammenfassung)
 # 
 # totalDistances <- as.data.frame(producersInfo)
+
+createDistanceCategory <- function(totalDistances) {
+  
+  newtotalDistances <- mutate(totalDistances, "Kategorie" = NA)
+  
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung <= 100] <- "0-100"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 100 & newtotalDistances$Gesamtentfernung <= 200] <- "100-200"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 200 & newtotalDistances$Gesamtentfernung <= 400] <- "200-400"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 400 & newtotalDistances$Gesamtentfernung <= 800] <- "400-800"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 800 & newtotalDistances$Gesamtentfernung <= 1600] <- "800-1600"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 1600 & newtotalDistances$Gesamtentfernung <= 3200] <- "1600-3200"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 3200 & newtotalDistances$Gesamtentfernung <= 6400] <- "3200-6400"
+  newtotalDistances$Kategorie[newtotalDistances$Gesamtentfernung > 6400 & newtotalDistances$Gesamtentfernung <= 12800] <- "6400-12800"
+  newtotalDistances$Kategorie[is.na(newtotalDistances$Gesamtentfernung) == TRUE] <- "NA"
+  
+  return(newtotalDistances)
+}
 
 newtotalDistances <- createDistanceCategory(totalDistances)
 

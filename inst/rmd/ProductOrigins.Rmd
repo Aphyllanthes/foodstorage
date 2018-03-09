@@ -40,7 +40,7 @@ Such foodcoop were founded in Freiburg as well resulting in five existing foodco
 This study tries to investigate the transport distances of the products consumed by the foodcoop "Kornkammer" and to inform the foodcoop members about the routes their food travels. A web app was created for this purpose.
 
 # Methods
-Data acquisition, data processing and data visualisation was performed by Miriam, Anna and Nele working closely together. The version control "git" and the platform "github" made this cooperation easy and productive. 
+Data acquisition, data processing and data visualisation was performed by Mirjam, Anna and Nele working closely together. The version control "git" and the platform "github" made this cooperation easy and productive. 
 
 ## data acquisition 
 
@@ -158,7 +158,8 @@ ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgru
   labs(#title = "Consumed products and their transport distance", 
        y = "Turnover [kg]",
        x = "Distance [km]")  +
-  guides(color=guide_legend(title="Product group"))
+  guides(color=guide_legend(title="Product group")) + 
+         theme(axis.text.x = element_text(size=10, angle=45, hjust = 1))
 
 ```
 
@@ -239,11 +240,11 @@ meanDists <- totalDistances %>%
 producerAdress$xCoord <- as.numeric(producerAdress$xCoord)
 producerAdress$yCoord <- as.numeric(producerAdress$yCoord)
 ## we only want to plot the producers where xCoordinates are available:
-producersExist <- producerAdress[-which(is.na(producerAdress$xCoord)),]
+producersExist <- producerAdress
 
 warning( paste0("The producers " , paste0(producerAdress[which(is.na(producerAdress$xCoord)),"Lieferant"], collapse = ", "), " cannot be diplayed"))
 ## St georgener BAuer: Untermühlbachhof
-##  Kaiserstühler Hof: Hof Homberg (google vom stühli)
+##  Kaiserstühler Hof: Hof Humberg (google vom stühli)
 
 ## ändern: Stefan zu Stefan Chab Honig Imker (oder so)
 
@@ -282,15 +283,17 @@ createCurves <- function(i, tD = totalDistances, pEx = producersExist, pOE = pro
   totalDistances <- tD
   pE <- which(producersExist$Lieferant == totalDistances$Lieferant[i])
   if(totalDistances$Lieferantentyp[i] == "Zwischenhaendler" & 
-     totalDistances$Lieferant[i] %in% unique(productOriginExist$Lieferant)){
+     totalDistances$Lieferant[i] %in% unique(productOriginExist$Lieferant) & length(pE) > 0){
     
     z <- which(productOriginExist$Lieferant == totalDistances$Lieferant[i] &
                  productOriginExist$Produkte_Zusammenfassung == totalDistances$Produkte_Zusammenfassung[i] &
                  productOriginExist$Ort == totalDistances$Ort[i])
     Li <- Lines(list(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), 
-               Line(gcIntermediate(coordinates(producersExist)[pE,], coordinates(productOriginExist)[z,], addStartEnd = T))) , ID = i)
+                     Line(gcIntermediate(coordinates(producersExist)[pE,], coordinates(productOriginExist)[z,], addStartEnd = T))) , ID = i)
   } else {
-    Li <- Lines(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), ID = i)
+    if(length(pE)>0){
+      Li <- Lines(Line(gcIntermediate(coordinates(Kornkammer), coordinates(producersExist)[pE,], addStartEnd = T)), ID = i)
+      } else {Li <- Lines(Line(coords = cbind(x = c(0,0), y = c(0,0))), ID = i)}
   }
   return(Li)
 }
