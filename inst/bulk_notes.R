@@ -18,7 +18,7 @@ replaceTableDB(con, "AdresseKornkammer", Kornkammer)
 
 ############## update producerAdress table #################
 
-produzenten <- read.csv2("data/Produzenten.csv")
+produzenten <- read.csv2("data/produzenten.csv")
 replaceTableDB(con, "producerAdress", produzenten)
 
 ################## calculation of the distances in the producerAdress table:
