@@ -12,10 +12,9 @@ bibliography: bibliography.bib
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 library(RSQLite)
-#library(readr)
 library(data.table)
-#library(sf)
-#library(rgdal)
+library(sf)
+library(rgdal)
 library(dplyr)
 library(raster)
 library(tidyr)
@@ -84,7 +83,7 @@ The visualization of the transportation distances of the products consumed by th
 
 # Results
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+```{r  message=FALSE, warning=FALSE, include=FALSE}
 # producersInfoStraight <- readOGR("../../data/producersInfoStraight/", "producersInfoStraight")
 # producersInfo <- readOGR("../../data/producersInfo/", "producersInfo")
 producersRoutes <- readOGR("../../data/producersRoutes/", "producersRoutes")
@@ -158,7 +157,7 @@ ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgru
 The actual driving routes of the products from the suppliers to the foodcoop differed from the flight distances used for the calculation of the transportation distances mentioned above (see Fig.\ref{fig1}).
 
 
-```{r map1, echo=FALSE, eval=FALSE, inclue=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
+```{r map1, echo=FALSE, inclue=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
 pal <- colorFactor(c("darkgreen", "blue", "red"), domain = c(  "Erzeuger", "Produzent", "Zwischenhaendler"))
 KKIcon <- iconList(
   Kornkammer = makeIcon("../../data/icon-2.png", "../../data/icon-2.png", 18, 18)
@@ -185,7 +184,7 @@ leaflet(producersExist) %>%
 
 The visualization of the transport distances (flight distances) of the products and their turnover per year showed that most of the products consumed by the FoodCoop were obtained within distances of 400 km. However, the FoodCoop gets products from many parts of the world, including, North- and South-America, Africa and Asia (see Fig. \ref{fig:app}).
 
-```{r generateGeoData, eval=FALSE, error=FALSE, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+```{r generateGeoData, echo=FALSE, error=TRUE, message=FALSE, warning=FALSE}
 ############
 con <- dbConnect(SQLite(), "../../data/kornInfo.sqlite")
 
