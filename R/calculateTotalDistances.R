@@ -7,7 +7,7 @@
 #' @export
 
 
-totalDistances <- function(origin = productOrigin, producers = producerAdress, productInfo){
+totalDistancesFun <- function(origin = productOrigin, producers = producerAdress, productInfo){
   ## the funciton SupplierDistance from the script "calculateDistances_Anna.R"
   originWithDistances <- SupplierDistance(origin, producers)
   

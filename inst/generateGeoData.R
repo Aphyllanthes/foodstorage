@@ -77,9 +77,9 @@ crs(producersExist) <- "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 
 
 crs(productOriginExist) <- crs(producersExist)
 
-writeOGR(productOriginExist, "data/productOriginExist/", "productOriginExist", "ESRI Shapefile")
-writeOGR(producersExist, "data/producersExist/", "producersExist", "ESRI Shapefile")
-writeOGR(Kornkammer, "data/Kornkammer/", "Kornkammer", "ESRI Shapefile")
+#writeOGR(productOriginExist, "data/productOriginExist/", "productOriginExist", "ESRI Shapefile")
+#writeOGR(producersExist, "data/producersExist/", "producersExist", "ESRI Shapefile")
+#writeOGR(Kornkammer, "data/Kornkammer/", "Kornkammer", "ESRI Shapefile")
 
 
 dbDisconnect(con)
