@@ -117,9 +117,7 @@ The analysis of transportation distances of products consumed by the foodcoop su
 For 53 out of 118 products not even a guess of the origin was possible and the share of products where no transportation distance could be calculated is the third largest ...
 
 
-For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure ... : 
-![](../../map1.png){width=250px}
-shows the actual driving directions for all products from its last transfer point. 
+For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure ... : shows the actual driving directions for all products from its last transfer point. 
 
 
 ```{r createDistanceCateogriyFunction, message=FALSE, warning=FALSE, include=FALSE}
@@ -166,7 +164,7 @@ ggplot(newtotalDistances, aes(x = Kategorie, y = avg.turnover, fill = Produktgru
 For every product that has ever been ordered by the FoodCoop, the transportation route to the last transfer point, can always be calculated. For a product that is ordered directly from the farmer, the last transfer point equals to its origin. Figure \ref{fig1} : 
 
 
-```{r map1, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
+```{r map1, eval=FALSE, inclue=FALSE, message=FALSE, warning=FALSE, fig.cap="The map with the driving directions from the suppliers to the FoodCoop \\label{fig1}"}
 pal <- colorFactor(c("darkgreen", "blue", "red"), domain = c(  "Erzeuger", "Produzent", "Zwischenhaendler"))
 KKIcon <- iconList(
   Kornkammer = makeIcon("../../data/icon-2.png", "../../data/icon-2.png", 24, 24)
@@ -175,7 +173,7 @@ KKIcon <- iconList(
 leaflet(producersExist) %>%
   addProviderTiles(providers$CartoDB.Positron) %>% 
   addCircleMarkers(radius = 6,
-                   stroke = FALSE, fillOpacity = 0.8, color=pal(producersExist$Lfrntnt),
+                   stroke = FALSE, fillOpacity = 0.8, color=pal(producersExist$producersExist),
                    popup = producersExist$Liefrnt) %>%  #, clusterOptions = markerClusterOptions()
   addLegend("bottomright",
             pal = pal, values = ~producersExist$Lfrntnt,
@@ -192,7 +190,7 @@ leaflet(producersExist) %>%
 
 shows the actual driving directions for all products from its last transfer point. 
 
-![](../../map2.png){width=250px}
+![](../../map1.png){width=250px}
 
 # Discussion
 
