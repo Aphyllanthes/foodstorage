@@ -37,7 +37,7 @@ A foodcoop is the combination of people and households for joint shopping. The i
 
 Such foodcoop were founded in Freiburg as well resulting in five existing foodcoops at the moment. The foodcoop "Kornkammer" was founded in 2015 and comprises about 50 households with more or less 100 members. The members decide together what kind of products they want to order, communicate with the producers and store the deliveries in a room where all members can purchase small quantities of the groceries.
 
-This study tries to investigate the transport distances of the products consumed by the foodcoop "Kornkammer" and to inform the foodcoop members about the routes their food travels. A web app was created for this purpose.
+Since knowledge about the origin of our food is a matter of concern to the FoodCoop "Kornkammer", this is examined in more detail in this work. This study tries to investigate the transport distances of the products consumed by the foodcoop "Kornkammer" and to inform the foodcoop members about the routes their food travels. A web app was created for this purpose.
 
 # Methods
 Data acquisition, data processing and data visualisation was performed by Mirjam, Anna and Nele working closely together. The version control "git" and the platform "github" made this cooperation easy and productive. 
@@ -100,7 +100,7 @@ Kornkammer <- readOGR("../../data/Kornkammer/", "Kornkammer")
 ```
 
 
-The foodcoop gets 118 products from 21 different suppliers. 12 of the suppliers (57%) were classified as farmers, 2 (10%) as manufacturers and 7 (33 %) as whole salers.
+The foodcoop gets 118 products from 21 different suppliers. 12 of the suppliers (57.2%) were classified as farmers, 2 (9.5%) as manufacturers and 7 (33.3 %) as whole salers.
 
 The accuracy of information available on the origin of the products varied with the transportation distance of the products to the foodcoop (see Fig. \ref{fig:accuracy}). All products where the origin was exactly known were located within a 600 km radius around the foodcoop. The farer distances a product was transported, the more difficult it became to find out it's origin. Interestingly, the turnover per year was decreasing with the transportation distance to the foodcoop. For example the 5 products with the highest average turnover per year (oats, spelt, oat drink, sunflower seeds and spelt drink) were transportet maximum 300 km to the foodcoop whereas the products with the lowest turnover per year were spices from Nepal with transportation distances of almost 7000 km.
 
@@ -328,36 +328,45 @@ leaflet(producersInfo) %>%
 ```
 
 # Discussion
+The FoodCoop Kornkammer obtains its products with the highest turnover rates from regional farmers (regional in this case defined as within a radius of 300 km). Nevertheless, it is not possible to speak of regional food, since countries in South- and Northamerica, Africa and Asia are found among the countries of origin.
 
-- uncertainties of data acquisition
-- missing data
+The accuracy of information available on the origin of the products varies with the type of supplier and the product itself. The exact information about the origin is given above all by regional farmers. The reason is obvious, as these are mainly personal contacts. The exact information about the origin of a product from afar can almost only be provided by a cooperative, since wholesalers rarely provide this information. 
+The large amount of products, whose origin is unknown and therefore represented in the results as missing values (NA) is mostly caused due to the missing information of the wholesale "Bode". This gap of information could either be filled with data from a further research, or a change of the supplier could be considered. The latter is an option, since most products ordered from "Bode" are also available at other existing suppliers and for only few products a new supplier is to be found.
+Since knowledge about the origin of our food is a matter of concern for the foodcoop, its members are already working on establishing further direct contacts with farmers/producers. Regarding the fact that the establishment of new connections to producers is an already runnig process, the data could be analysed in a future work regarding the time of order of the products. There might be a trend in increasing turnover rates of local products as well as increasing knowledge about the exact origin.
+
+The calculated distances provide a good overview of the distances, but do not represent the distance the product was actually transported. Because we cannot expect to know the actual transport routes, but only make assumptions about it, the distance values are associated with uncertainties. Uncertainties increase with increasing distance, which we understand when we think of the transport routes that a cargo ship can take. Therefore, the actual approach routes were presented in this paper, but not used for calculations. 
+Another uncertainty is that some products from suppliers even come from sub-suppliers. Tracing back the way of origin is very intransparent for some products (e.g. some products from the supplier "OBEG" come from "BYODO" - in this case, the condition that the information is available is fulfilled!). Due to the fact that the availability of such informations is rare, an implementation of the transport routes via two suppliers was not performed.
+
+The calculation of the turnover in this work was done with values of different units. Most products turnover unit was kg, but few have the unit liters or pieces. A conversion of the units is still necessary, but was not possible in the time frame of this work, considering the error to be minor as only a few products are affected. It should therefore be taken into account that the results of this work are erroneous, especially regarding products like chocolate that comes in pieces of 100 gramms.
+calculation was done with turnover in kg, but the data is only in this unit for most products, some data has the unit liters or piece, where the the worst case is the chocolate, where the piece only weights 100 g and the data is wrong with a factor of 10.
+
+The purpose of the data visualisation in this work is to infrom consumers, but not to value the footprint of the emissions the transport caused. Therefore this work provides an overview on the origin of the products, which could also be used to calculate emissions in a future work, that likewise should be considered as overview and handled with respect to the inaccuracy of the data.
+
+---------------------------------------------------------------------------------------------------------------------
 - transportation of seeds and seedlings/manure/etc. not included
 very few studies have analyzed transportation
 upstream of the farm (e.g., transport of farm equipment and
 supplies to the farm), which may be important for life-cycle
 GHG emissions.
-
- ... no caclulation of the actual driving routes because of inaccuracy of the information - no importance ... especcially for products from far.
-
+- missing data
+---------------------------------------------------------------------------------------------------------------------
 Thus, transportation may be one of the main targets when a conventional energy analysis
 is used, but not when greenhouse gas emissions from all sources are accounted for. When
 a conventional energy analysis is used for food, important emissions which affect the climate
 are not included. This may lead to a sub-optimisation of pollution control.
-
+---------------------------------------------------------------------------------------------------------------------
 There is some debate on the extent
 to which buying products based solely on the criteria of miles trav-
 eled is actually a good indicator of environmental impact, given that
 many studies show that distance traveled is actually a poor indicator
 of total environmental impact (e.g., see Coley et al., 2009; Mason
 et al., 2002; Teisl, 2011).
-
-The large amount of products, whose origin is unknown and therefore represented in the results as missing values (NA) is mostly caused due to the missing information of the wholesale "Bode". This gap of information could either be filled with data from a further research, or a change of the supplier could be considered. The latter is an option, since most products ordered from "Bode" are also available at other existing suppliers and for only few products a new supplier is to be found.
-
+---------------------------------------------------------------------------------------------------------------------
 - further analytics
 
-- calculation was done with turnover in kg, but the data is only in this unit for most products, some data has the unit liters or piece, where the the worst case is the chocolate, where the piece only weights 100 g and the data is wrong with a factor of 10.
 
-- some products from suppliers come even from sub-suppliers, who get the products form its real origin! (e.g. some products from OBEG are from BYODO)
+
+
 
 ## Conclusion
 
